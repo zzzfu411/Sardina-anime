@@ -8,6 +8,7 @@
 <p align="center">macOS Apple Silicon · 本地网页版 · v0.7.2 开发预览</p>
 
 <p align="center">
+  <a href="#安装">下载</a> ·
   <a href="#功能">功能</a> ·
   <a href="#运行">运行</a> ·
   <a href="#本地-api">API</a> ·
@@ -32,9 +33,17 @@
 
 已接入 **girigiri、AniCh、AkiAnime、二矿、咕咕、乐豆、稀饭**。各来源支持范围见[来源清单](docs/SOURCES.md)。弹幕默认关闭，观看人数是进入时的快照；详见[弹幕说明](docs/DANMAKU.md)。
 
+## 安装
+
+**macOS 12 及以上 · Apple Silicon（M 系列）**，无需安装 Node.js 或 pnpm。
+
+[下载 v0.7.2 DMG](https://github.com/zzzfu411/Sardina-anime/releases/download/v0.7.2/Sardina-anime-0.7.2-arm64.dmg) · [ZIP](https://github.com/zzzfu411/Sardina-anime/releases/download/v0.7.2/Sardina-anime-0.7.2-arm64.zip) · [版本说明与校验值](https://github.com/zzzfu411/Sardina-anime/releases/tag/v0.7.2)
+
+打开 DMG，将 **Sardina anime** 拖入「应用程序」。当前为开发预览，尚未经过 Developer ID 签名和 Apple 公证；首次打开如被拦截，请确认下载来源后参照 [Apple 的打开说明](https://support.apple.com/zh-cn/102445)。
+
 ## 运行
 
-需要 [Node.js 24](https://nodejs.org/) 和 [pnpm 9.15.9](https://pnpm.io/installation)。
+从源码运行需要 [Node.js 24](https://nodejs.org/) 和 [pnpm 9.15.9](https://pnpm.io/installation)。
 
 ```sh
 git clone https://github.com/zzzfu411/Sardina-anime.git

@@ -72,7 +72,9 @@ await build({
     mac: {
       icon: root + '/assets/icon.icns',
       category: 'public.app-category.entertainment',
-      identity: null,
+      // Seal the complete bundle without requiring a Developer ID certificate.
+      identity: '-',
+      strictVerify: true,
       hardenedRuntime: false,
       artifactName: 'Sardina-anime-${version}-${arch}.${ext}',
     },
