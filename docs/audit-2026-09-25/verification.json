@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-09-25T11:42:05.151957+00:00",
+  "baseline": "95dccdd plus existing user working-tree changes",
+  "node": "v24.21.0",
+  "unitTestsBeforeContinuation": 164,
+  "unitTestsAfterContinuation": 175,
+  "newRegressionTests": 11,
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "chromeE2e": {
+    "startTime": "2026-09-25T11:36:51.882Z",
+    "duration": 21597.536,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "schemaValidation": "1 finding valid; confirmed baseline issue is fixed in the current tree",
+  "authReview": {
+    "provenance": "Independent read-only reviewer using memory fixtures",
+    "apiRoutes": 41,
+    "unauthenticatedRequestsRejected": 142,
+    "hostOriginFetchSiteChecksPassed": 8,
+    "staticTraversalChecksPassed": 9
+  },
+  "historyRecovery": {
+    "fixtureOrigin": "http://127.0.0.1:4187",
+    "database": ":memory:",
+    "simulatedStatus": 503,
+    "videoElementsWhileHistoryUnavailable": 0,
+    "seededPosition": 7,
+    "retryButtonWorked": true,
+    "positionAfterRecovery": 10.013837,
+    "readyState": 4,
+    "videoWidth": 480,
+    "alertsAfterRecovery": 0,
+    "expectedConsoleHttpErrors": 2,
+    "screenshots": [
+      "output/playwright/audit-history-retry-2026-09-25.png",
+      "output/playwright/audit-history-recovered-2026-09-25.png"
+    ]
+  },
+  "parserBenchmark": "parser-performance.json",
+  "limits": [
+    "Only temporary/in-memory profiles and fixed MP4/HLS fixtures were used.",
+    "No actual user profile or live source was accessed.",
+    "Safari and macOS installer were not rerun/rebuilt.",
+    "Existing production dependency advisories remain; applicability is documented in REPORT.md."
+  ],
+  "independentFinalVerification": {
+    "result": "verified after wording corrections",
+    "baselineSnapshotMatchesGit": true,
+    "traceAndRemediationVerified": true,
+    "corrections": [
+      "Call the fixture maximum-field-count, not maximum-byte-size.",
+      "Make the enabled-source and cache-miss/refresh prerequisites explicit."
+    ]
+  }
+}

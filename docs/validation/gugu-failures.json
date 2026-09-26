@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-09-23T11:14:17.935Z",
+  "animeId": "4762",
+  "rows": [
+    {
+      "episode": "1",
+      "code": "NO_MEDIA",
+      "message": "咕咕暂未提供这一集的媒体，请换源"
+    },
+    {
+      "episode": "2",
+      "code": "NO_MEDIA",
+      "message": "咕咕暂未提供这一集的媒体，请换源"
+    }
+  ]
+}

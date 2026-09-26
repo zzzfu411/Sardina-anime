@@ -1,0 +1,109 @@
+{
+  "reviewDate": "2026-09-26",
+  "timezone": "Asia/Shanghai",
+  "appVersion": "0.7.0",
+  "environment": {
+    "server": "tests/e2e-server.ts",
+    "origin": "http://127.0.0.1:4187",
+    "database": ":memory:",
+    "browser": "Chrome via Playwright CLI",
+    "viewports": [[1440, 900], [390, 844]],
+    "initialViewportWidth": 1280,
+    "businessCodeChanged": false,
+    "realUserDataTouched": false,
+    "productionSourceAvailabilityTested": false
+  },
+  "scenarios": [
+    {
+      "id": "next-episode-reload",
+      "finding": "F01",
+      "steps": ["Open episode 1", "Click next episode", "Seek episode 2 to 11 seconds and pause", "Confirm saved history", "Reload"],
+      "result": {"episode": "2", "urlResume": 0, "savedPosition": 11, "positionAfterReload": 0, "duration": 24}
+    },
+    {
+      "id": "clear-history-return",
+      "finding": "F02",
+      "steps": ["Save episode 1 at 9 seconds", "Navigate to history", "Confirm clear", "Return immediately to player"],
+      "result": {"historyAfterClear": [], "resumedPosition": 9, "historyAfterReturn": [{"key": "fixture:one:mp4:1", "position": 9}]},
+      "fixtureNote": "Repeated capture auto-accepted the confirmation in the isolated page; the preceding manual-dialog probe showed the same resumed position."
+    },
+    {
+      "id": "home-detail-continuation",
+      "finding": "F04",
+      "fixture": [{"episode": "2", "position": 24, "duration": 24, "order": "newest"}, {"episode": "1", "position": 9, "duration": 24, "order": "older"}],
+      "result": {"homeEpisode": "1", "homeCopy": "第 1 话，已看到 0:09", "detailEpisode": "2"}
+    },
+    {
+      "id": "associate-before-choice",
+      "finding": "F07",
+      "steps": ["Open detail without a library entry", "Click associate source", "Do not select any result"],
+      "result": {"libraryCountBefore": 0, "libraryCountAfter": 1, "createdStatus": "watching", "createdRefs": [{"sourceId": "fixture", "id": "one"}]}
+    },
+    {
+      "id": "update-ack-before-play",
+      "finding": "F06",
+      "fixture": {"latestCount": 5, "seenCount": 3, "playbackResolveStatus": 503},
+      "steps": ["Open old episode 1", "Playback resolution fails"],
+      "result": {"latestCount": 5, "seenCount": 5, "successfulPlayback": false}
+    },
+    {
+      "id": "disabled-primary-source",
+      "finding": "F05",
+      "fixture": {"linkedSources": ["fixture", "offline"], "disabledSource": "fixture"},
+      "result": {"mainText": "暂时没有加载成功\n这个来源已停用，请在设置中启用\n重新加载", "linkedSourceSectionCount": 0}
+    },
+    {
+      "id": "search-return-pages",
+      "finding": "F08",
+      "fixtureNote": "Two unique paginated SSE results were supplied by browser interception.",
+      "steps": ["Load second results page", "Open its detail", "Go back"],
+      "result": {"before": ["星空放映室", "海风与旧时光"], "after": ["星空放映室"], "loadMoreOfferedAgain": true}
+    },
+    {
+      "id": "long-series-layout",
+      "finding": "F09",
+      "fixture": {"episodeCount": 200, "currentEpisode": 180},
+      "result": {"watchListScrollTop": 0, "watchListHeight": 420, "activeEpisodeVisible": false, "detailPageHeight": 2194, "detailLinkedSourcesTop": 1975.78125, "detailVisitedMarkers": 1}
+    },
+    {
+      "id": "history-save-failure",
+      "finding": "F03",
+      "fixture": {"historyPostStatus": 500},
+      "steps": ["Play to 8 seconds and pause", "Wait for failed save response", "Open history and wait for page heading", "Read persisted API", "Reload history"],
+      "result": {"userVisibleSaveWarnings": [], "cachedRowsVisible": 1, "cachedPosition": 8, "persistedRows": 0, "visibleRowsAfterReload": 0}
+    },
+    {
+      "id": "library-filter-empty",
+      "finding": "F11",
+      "fixture": {"libraryCount": 1, "status": "watching"},
+      "steps": ["Select completed status filter"],
+      "result": {"title": "给喜欢的番剧留个位置", "action": "去找一部番剧", "totalLibraryCount": 1}
+    },
+    {
+      "id": "fullscreen-error-recovery",
+      "finding": "F10",
+      "fixtureNote": "Media error event plus a 503 refresh response simulated an interruption.",
+      "result": {"fullscreen": true, "instruction": "也可以在右侧切换线路或查找其他来源", "linePickerInsideFullscreen": false, "sourceSwitcherInsideFullscreen": false}
+    },
+    {
+      "id": "responsive-and-theme-inspection",
+      "finding": "F15",
+      "result": {
+        "mobileHorizontalOverflow": {"watch": false, "catalog": false, "calendar": false, "settings": false},
+        "mobileCatalogFirstCardTop": 643.296875,
+        "mobileCatalogFirstTitleTop": 819.296875,
+        "mobileViewportHeight": 844,
+        "mobilePlaybackSpeedControlHeight": 34,
+        "mobilePlayerButtonHeights": [44, 44, 44],
+        "desktopDarkHorizontalOverflow": false,
+        "stableDarkSecondaryButton": {"background": "rgb(16, 24, 39)", "color": "rgb(233, 238, 247)"}
+      }
+    }
+  ],
+  "limitations": [
+    "Fixture failures are controlled tests, not production availability measurements.",
+    "Narrow layout was tested by browser viewport resizing, not physical touch hardware.",
+    "No new business code, installer, or full unit-suite run was part of this review.",
+    "Prior partial probes with stale DOM timing were excluded; recorded scenarios use completed navigation or explicit readiness conditions."
+  ]
+}

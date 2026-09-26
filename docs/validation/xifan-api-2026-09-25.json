@@ -1,0 +1,166 @@
+{
+  "checkedAt": "2026-09-24T18:39:23.512Z",
+  "cause": "The adapter still used the old API origin and an unregistered publishable API key; the current official web client uses a different origin and publishable key.",
+  "website": "https://next.xifanacg.com/",
+  "observedPublicConfigAsset": "https://next.xifanacg.com/_next/static/chunks/05pvawgvkihwy.js",
+  "previousOrigin": "https://api.xifandm.net",
+  "currentOrigin": "https://api.xifanacg.com",
+  "oldRequests": [
+    {
+      "url": "https://api.xifandm.net/rest/v1/rpc/get_recently_updated_animes",
+      "status": 401,
+      "ms": 711,
+      "response": {
+        "message": "Unregistered API key",
+        "hint": "Double check the provided API key as it is not registered for this project."
+      }
+    },
+    {
+      "url": "https://api.xifandm.net/rest/v1/rpc/search_animes",
+      "status": 401,
+      "ms": 708,
+      "response": {
+        "message": "Unregistered API key",
+        "hint": "Double check the provided API key as it is not registered for this project."
+      }
+    }
+  ],
+  "newRequests": [
+    {
+      "name": "new-search",
+      "url": "https://api.xifanacg.com/rest/v1/rpc/search_animes",
+      "status": 200,
+      "ms": 1106,
+      "publicKeySha256": "cd8d505b9b8e",
+      "items": 6
+    },
+    {
+      "name": "new-recent",
+      "url": "https://api.xifanacg.com/rest/v1/rpc/get_recently_updated_animes",
+      "status": 200,
+      "ms": 1376,
+      "publicKeySha256": "cd8d505b9b8e",
+      "items": 46
+    },
+    {
+      "name": "new-catalog",
+      "url": "https://api.xifanacg.com/rest/v1/rpc/search_animes",
+      "status": 200,
+      "ms": 1430,
+      "publicKeySha256": "cd8d505b9b8e",
+      "items": 24
+    },
+    {
+      "name": "new-detail",
+      "url": "https://api.xifanacg.com/rest/v1/rpc/get_anime_detail",
+      "status": 200,
+      "ms": 1044,
+      "publicKeySha256": "cd8d505b9b8e"
+    }
+  ],
+  "adapter": {
+    "checkedAt": "2026-09-24T18:34:45.414Z",
+    "sourceVersion": "1.0.1",
+    "stages": [
+      {
+        "stage": "home",
+        "ok": true,
+        "ms": 1605,
+        "count": 24
+      },
+      {
+        "stage": "search",
+        "ok": true,
+        "ms": 427,
+        "count": 6,
+        "total": 6
+      },
+      {
+        "stage": "catalog",
+        "ok": true,
+        "ms": 482,
+        "count": 24,
+        "total": 3376
+      },
+      {
+        "stage": "detail",
+        "ok": true,
+        "ms": 518,
+        "title": "无职转生 第三季 ～到了异世界就拿出真本事～",
+        "lines": [
+          {
+            "id": "4",
+            "episodes": 13
+          }
+        ]
+      },
+      {
+        "stage": "playback",
+        "ok": true,
+        "status": 206,
+        "format": "mp4",
+        "contentType": "video/mp4",
+        "contentRange": "bytes 0-1023/798084260",
+        "animeId": "3403",
+        "episodeId": "121397"
+      }
+    ]
+  },
+  "runningEngine": {
+    "checkedAt": "2026-09-24T18:36:52.389Z",
+    "origin": "http://127.0.0.1:51908",
+    "enabledSources": 7,
+    "historyCount": 4,
+    "libraryCount": 0,
+    "preserved": {
+      "history": true,
+      "library": true,
+      "settings": true,
+      "sourceSettings": true,
+      "searchHistory": true,
+      "bangumiLinks": true
+    },
+    "browserCookieMaxAgeDays": 30,
+    "requests": [
+      {
+        "path": "/api/v1/sources",
+        "status": 200,
+        "sourceVersion": "1.0.1"
+      },
+      {
+        "path": "/api/v1/catalog?sourceId=xifan&page=1&refresh=1",
+        "status": 200,
+        "items": 24,
+        "total": 3376
+      },
+      {
+        "path": "/api/v1/home?sourceId=xifan&refresh=1",
+        "status": 200,
+        "items": 24
+      }
+    ]
+  },
+  "ui": {
+    "browser": "Codex in-app browser",
+    "path": "/catalog?source=xifan",
+    "displayedTotal": 3376,
+    "visibleCards": [
+      "Welsh & Shedar",
+      "战斗之魂[Re] 绝界之空"
+    ],
+    "sourceRatingVisible": true
+  },
+  "checks": {
+    "typecheck": "passed",
+    "xifanUnitTests": {
+      "passed": 7,
+      "total": 7
+    },
+    "build": "passed"
+  },
+  "limitations": [
+    "One public MP4 was probed with Range bytes=0-1023; full-episode playback was not repeated.",
+    "Login/exam-gated content and other playback lines remain unsupported.",
+    "Existing macOS installer was not rebuilt."
+  ]
+}

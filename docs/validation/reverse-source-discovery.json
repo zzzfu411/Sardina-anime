@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-09-23T10:44:16.994Z",
+  "mode": "read-only-endpoint-discovery",
+  "rows": [
+    {
+      "id": "gugu",
+      "status": 200,
+      "host": "www.gugu3.com",
+      "bytes": 45767,
+      "keys": [
+        "data",
+        "msg",
+        "code"
+      ],
+      "ms": 1894
+    },
+    {
+      "id": "yzx-boot",
+      "status": 200,
+      "host": "ss.trgfd.cn",
+      "bytes": 7272,
+      "keys": [
+        "app",
+        "channels",
+        "channel",
+        "filter",
+        "ranks",
+        "xinRanks",
+        "guanggao",
+        "huancun",
+        "tishi",
+        "qiangzhi",
+        "qudao",
+        "color"
+      ],
+      "ms": 329
+    },
+    {
+      "id": "dmbus",
+      "status": 522,
+      "host": "dmbus.cc",
+      "bytes": 16,
+      "ms": 2300
+    },
+    {
+      "id": "lmm85",
+      "status": 403,
+      "host": "www.lmm85.com",
+      "bytes": 5361,
+      "title": "Just a moment...",
+      "ms": 2428
+    },
+    {
+      "id": "lanerc",
+      "code": "BLOCKED_ADDRESS",
+      "message": "禁止访问本地或保留网络地址",
+      "ms": 210
+    },
+    {
+      "id": "cain",
+      "status": 200,
+      "host": "frontend-static.kurte.cn",
+      "bytes": 139,
+      "keys": [
+        "code",
+        "is_server_fixed",
+        "fixed_content",
+        "server"
+      ],
+      "ms": 557
+    },
+    {
+      "id": "yzx-list",
+      "status": 200,
+      "host": "js.trgfd.cn",
+      "bytes": 5855,
+      "keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ms": 1565
+    },
+    {
+      "id": "guazi",
+      "status": 200,
+      "host": "apinew.uozvr.com",
+      "bytes": 86,
+      "keys": [
+        "code",
+        "message",
+        "result"
+      ],
+      "ms": 1478
+    },
+    {
+      "id": "jinpai",
+      "status": 200,
+      "host": "y2s52n7.com",
+      "bytes": 48,
+      "keys": [
+        "code",
+        "msg"
+      ],
+      "ms": 2341
+    },
+    {
+      "id": "shixiong",
+      "code": "UPSTREAM_ERROR",
+      "message": "来源暂时无法连接，请稍后重试",
+      "ms": 1643
+    },
+    {
+      "id": "huazi",
+      "code": "UPSTREAM_ERROR",
+      "message": "来源暂时无法连接，请稍后重试",
+      "ms": 1022
+    },
+    {
+      "id": "shandian",
+      "status": 200,
+      "host": "u.yyxdmn.com",
+      "bytes": 55,
+      "ms": 1173
+    },
+    {
+      "id": "agedm",
+      "status": 200,
+      "host": "www.agedm.io",
+      "bytes": 128091,
+      "title": "AGE动漫 - 在线动漫观看",
+      "ms": 1562
+    },
+    {
+      "id": "xifan",
+      "status": 200,
+      "host": "next.xifanacg.com",
+      "bytes": 521393,
+      "title": "稀饭动漫 Next",
+      "ms": 2574
+    }
+  ]
+}

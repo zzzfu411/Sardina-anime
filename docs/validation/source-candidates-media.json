@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-09-22T18:05:14.325Z",
+  "scope": "Public player configuration only; not decoded playback",
+  "records": [
+    {
+      "name": "moonci-play1",
+      "title": "新番《躲在超市后门抽烟的两人》第01集在线观看-月之祠 - 二次元爱好者的纯净追番圣地",
+      "player": {
+        "from": "X_1",
+        "encrypt": 1,
+        "points": 0,
+        "trysee": 0,
+        "urlHost": "apn.moedot.net",
+        "format": "mp4"
+      }
+    },
+    {
+      "name": "moonci-play2",
+      "title": "新番《躲在超市后门抽烟的两人》第01集在线观看-月之祠 - 二次元爱好者的纯净追番圣地",
+      "player": {
+        "from": "X_2",
+        "encrypt": 1,
+        "points": 0,
+        "trysee": 0,
+        "urlHost": "play.xfvod.pro:8088",
+        "format": "mp4"
+      }
+    },
+    {
+      "name": "moonci-play3",
+      "title": "新番《躲在超市后门抽烟的两人》第01集在线观看-月之祠 - 二次元爱好者的纯净追番圣地",
+      "player": {
+        "from": "X_3",
+        "encrypt": 1,
+        "points": 0,
+        "trysee": 0,
+        "urlHost": "opaque",
+        "format": "other"
+      }
+    },
+    {
+      "name": "mutefun-play",
+      "title": "在线播放月光下的异世界之旅 第二季 第01集-月光下的异世界之旅 第二季高清在线观看动漫网站-MuteFun动漫网站-无声乐趣-(゜-゜)つロ 干杯~",
+      "player": {
+        "from": "m2",
+        "encrypt": 3,
+        "points": 0,
+        "trysee": 0,
+        "urlHost": "opaque",
+        "format": "other"
+      }
+    }
+  ]
+}

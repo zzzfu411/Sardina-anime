@@ -1,0 +1,218 @@
+{
+  "startedAt": "2026-09-23T11:29:52.234Z",
+  "checkedAt": "2026-09-23T11:34:28.436Z",
+  "browser": "153.0.8010.53",
+  "mode": "start-seek-resume",
+  "results": [
+    {
+      "sourceId": "xifan",
+      "animeId": "3385",
+      "title": "天是红河岸",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3385",
+        "lineId": "4",
+        "episodeId": "121958"
+      },
+      "ok": true,
+      "startMs": 7212,
+      "duration": 1370.093,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.026833,
+      "resumedPosition": 91.037103,
+      "resumeError": 0.010270000000005552
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3385",
+      "title": "天是红河岸",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3385",
+        "lineId": "4",
+        "episodeId": "122665"
+      },
+      "ok": true,
+      "startMs": 23319,
+      "duration": 1370.093,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.020548,
+      "resumedPosition": 91.029521,
+      "resumeError": 0.008972999999997455
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3427",
+      "title": "拯救替身千金的是冷酷无情冰之王子的爱",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3427",
+        "lineId": "4",
+        "episodeId": "121859"
+      },
+      "ok": true,
+      "startMs": 5861,
+      "duration": 329.996333,
+      "width": 1920,
+      "height": 1080,
+      "frames": 66,
+      "seek": 90,
+      "savedPosition": 91.020866,
+      "resumedPosition": 91.030902,
+      "resumeError": 0.01003599999999949
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3427",
+      "title": "拯救替身千金的是冷酷无情冰之王子的爱",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3427",
+        "lineId": "4",
+        "episodeId": "122629"
+      },
+      "ok": true,
+      "startMs": 5782,
+      "duration": 329.996333,
+      "width": 1920,
+      "height": 1080,
+      "frames": 66,
+      "seek": 90,
+      "savedPosition": 91.019062,
+      "resumedPosition": 91.027932,
+      "resumeError": 0.00887000000000171
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3400",
+      "title": "与你相恋到生命尽头",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3400",
+        "lineId": "4",
+        "episodeId": "121860"
+      },
+      "ok": true,
+      "startMs": 5495,
+      "duration": 1420.001917,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.016395,
+      "resumedPosition": 91.023297,
+      "resumeError": 0.006901999999996633
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3400",
+      "title": "与你相恋到生命尽头",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3400",
+        "lineId": "4",
+        "episodeId": "122621"
+      },
+      "ok": true,
+      "startMs": 14181,
+      "duration": 1420.001917,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.017137,
+      "resumedPosition": 91.028047,
+      "resumeError": 0.010909999999995534
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3398",
+      "title": "感谢对战。 ～大小姐才不玩格斗游戏～",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3398",
+        "lineId": "4",
+        "episodeId": "121861"
+      },
+      "ok": true,
+      "startMs": 6227,
+      "duration": 1430.053625,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.012556,
+      "resumedPosition": 91.020354,
+      "resumeError": 0.007797999999993976
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3398",
+      "title": "感谢对战。 ～大小姐才不玩格斗游戏～",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3398",
+        "lineId": "4",
+        "episodeId": "122615"
+      },
+      "ok": true,
+      "startMs": 6101,
+      "duration": 1430.011917,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.014024,
+      "resumedPosition": 91.029945,
+      "resumeError": 0.015920999999991636
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3294",
+      "title": "欺诈游戏",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3294",
+        "lineId": "4",
+        "episodeId": "47887"
+      },
+      "ok": true,
+      "startMs": 6112,
+      "duration": 1430.144,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.014379,
+      "resumedPosition": 91.02346,
+      "resumeError": 0.009080999999994788
+    },
+    {
+      "sourceId": "xifan",
+      "animeId": "3294",
+      "title": "欺诈游戏",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3294",
+        "lineId": "4",
+        "episodeId": "47888"
+      },
+      "ok": true,
+      "startMs": 5748,
+      "duration": 1430.101,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.015103,
+      "resumedPosition": 91.019058,
+      "resumeError": 0.003955000000004816
+    }
+  ]
+}

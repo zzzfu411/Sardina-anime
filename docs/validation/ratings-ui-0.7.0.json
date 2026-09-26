@@ -1,0 +1,211 @@
+{
+  "version": "0.7.0",
+  "checkedAt": "2026-09-24T08:57:57.141Z",
+  "environment": "Chrome real public sources, isolated profile",
+  "layouts": [
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": false,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scoreWidth": 730
+    },
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": true,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scoreWidth": 730
+    },
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": false,
+      "width": 768,
+      "scrollWidth": 768,
+      "scoreWidth": 348
+    },
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": true,
+      "width": 768,
+      "scrollWidth": 768,
+      "scoreWidth": 348
+    },
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": false,
+      "width": 390,
+      "scrollWidth": 390,
+      "scoreWidth": 354
+    },
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": true,
+      "width": 390,
+      "scrollWidth": 390,
+      "scoreWidth": 354
+    },
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": false,
+      "width": 320,
+      "scrollWidth": 320,
+      "scoreWidth": 284
+    },
+    {
+      "theme": "light",
+      "page": "detail",
+      "expanded": true,
+      "width": 320,
+      "scrollWidth": 320,
+      "scoreWidth": 284
+    },
+    {
+      "theme": "light",
+      "page": "/",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "light",
+      "page": "/",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "light",
+      "page": "/",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "light",
+      "page": "/catalog?browse=popular",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "light",
+      "page": "/catalog?browse=popular",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "light",
+      "page": "/catalog?browse=popular",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": false,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scoreWidth": 730
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": true,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "scoreWidth": 730
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": false,
+      "width": 768,
+      "scrollWidth": 768,
+      "scoreWidth": 348
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": true,
+      "width": 768,
+      "scrollWidth": 768,
+      "scoreWidth": 348
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": false,
+      "width": 390,
+      "scrollWidth": 390,
+      "scoreWidth": 354
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": true,
+      "width": 390,
+      "scrollWidth": 390,
+      "scoreWidth": 354
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": false,
+      "width": 320,
+      "scrollWidth": 320,
+      "scoreWidth": 284
+    },
+    {
+      "theme": "dark",
+      "page": "detail",
+      "expanded": true,
+      "width": 320,
+      "scrollWidth": 320,
+      "scoreWidth": 284
+    },
+    {
+      "theme": "dark",
+      "page": "/",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "dark",
+      "page": "/",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "dark",
+      "page": "/",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "dark",
+      "page": "/catalog?browse=popular",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "dark",
+      "page": "/catalog?browse=popular",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "dark",
+      "page": "/catalog?browse=popular",
+      "width": 320,
+      "scrollWidth": 320
+    }
+  ],
+  "ambiguousCombinedArcRequiresChoice": true,
+  "ratings": "Bangumi\n7.8\n/ 10\n6,355 人评分 · 排名 #470\ngirigiri 展示分（番）\n7.1\n/ 10\n由来源页面提供\ngirigiri 站内\n3.8\n/ 10\n11,228 人评分\n\n对应《Re：从零开始的异世界生活 第四季 丧失篇》（2026） · 手动关联 · 2026/9/24 获取\n\n更改 Bangumi 条目",
+  "errors": [],
+  "onlyPreviewProfileChanged": true
+}

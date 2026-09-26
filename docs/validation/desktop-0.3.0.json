@@ -1,0 +1,57 @@
+{
+  "version": "0.3.0",
+  "checkedAt": "2026-09-23T11:54:48.514Z",
+  "platform": "darwin",
+  "arch": "arm64",
+  "systemNodeOnPath": false,
+  "testedDiskImage": true,
+  "title": "映序 · Revanime",
+  "preferences": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false
+  },
+  "engine": {
+    "app": "revanime",
+    "version": "0.3.0",
+    "pid": 15176,
+    "releaseStatus": "development-preview"
+  },
+  "sources": [
+    {
+      "id": "anich",
+      "name": "AniCh"
+    },
+    {
+      "id": "aki",
+      "name": "AkiAnime"
+    },
+    {
+      "id": "girigiri",
+      "name": "girigiri"
+    },
+    {
+      "id": "erkuang",
+      "name": "二矿动漫"
+    },
+    {
+      "id": "gugu",
+      "name": "咕咕动漫"
+    },
+    {
+      "id": "ledou",
+      "name": "乐豆动漫"
+    },
+    {
+      "id": "xifan",
+      "name": "稀饭动漫"
+    }
+  ],
+  "repeatLaunchUsesSameEngine": true,
+  "browserModeAttaches": true,
+  "catalogNavigation": true,
+  "weekdayNavigation": true,
+  "searchLanding": true,
+  "resumeEventReloads": true,
+  "ok": true
+}

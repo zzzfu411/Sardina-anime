@@ -1,0 +1,50 @@
+{
+  "startedAt": "2026-09-22T08:07:52.536Z",
+  "checkedAt": "2026-09-22T08:08:11.055Z",
+  "browser": "153.0.8010.53",
+  "mode": "start-seek-resume",
+  "results": [
+    {
+      "sourceId": "anich",
+      "animeId": "38374",
+      "title": "尼古喵喵",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38374",
+        "lineId": "auto",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 4379,
+      "duration": 1420.032,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.010905,
+      "resumedPosition": 91.029992,
+      "resumeError": 0.019086999999998966
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "38374",
+      "title": "尼古喵喵",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38374",
+        "lineId": "auto",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 3503,
+      "duration": 1420.074667,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.003769,
+      "resumedPosition": 91.014932,
+      "resumeError": 0.01116299999999626
+    }
+  ]
+}

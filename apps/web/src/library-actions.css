@@ -1,0 +1,64 @@
+.association-dialog {
+  width: min(600px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
+  padding: 24px;
+  box-shadow: var(--shadow-float);
+}
+.association-dialog::backdrop {
+  background: #0008;
+}
+.association-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+.association-comparison > div {
+  border: 1px solid var(--line);
+  padding: 16px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.association-comparison small {
+  color: var(--muted);
+}
+.association-confirm {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 44px;
+  margin-block: 16px;
+}
+.association-buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.linked-source-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.linked-source-item .text-link {
+  min-height: 44px;
+}
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media (max-width: 480px) {
+  .association-comparison {
+    grid-template-columns: 1fr;
+  }
+  .association-dialog {
+    padding: 18px;
+  }
+}

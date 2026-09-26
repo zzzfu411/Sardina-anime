@@ -1,0 +1,163 @@
+{
+  "checkedAt": "2026-09-23T10:45:29.354Z",
+  "rows": [
+    {
+      "id": "yzx",
+      "stage": "search",
+      "keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "count": 15,
+      "first": [
+        {
+          "id": 229,
+          "title": "葬送的芙莉莲",
+          "category": "动漫",
+          "year": "2023"
+        },
+        {
+          "id": 1151,
+          "title": "葬送的芙莉莲 第二季",
+          "category": "动漫",
+          "year": "2026"
+        }
+      ]
+    },
+    {
+      "id": "yzx",
+      "stage": "detail",
+      "keys": [
+        "videoId",
+        "videoName",
+        "name",
+        "bieming",
+        "newchapter",
+        "typeName",
+        "class",
+        "subTypeName",
+        "region",
+        "blurb",
+        "shortBlurb",
+        "year",
+        "score",
+        "actor",
+        "fengmiantu",
+        "dahengtu",
+        "xiaohengtu",
+        "dahengtuweb",
+        "xiaohengtuweb",
+        "remarks",
+        "total",
+        "serial",
+        "serialDesc",
+        "isend",
+        "playUrlList"
+      ]
+    },
+    {
+      "id": "gugu",
+      "stage": "typeFilterVodList",
+      "keys": [
+        "type_id",
+        "type_name",
+        "recommend_list"
+      ]
+    },
+    {
+      "id": "gugu",
+      "stage": "searchList",
+      "keys": [
+        "search_list"
+      ]
+    },
+    {
+      "id": "jinpai",
+      "stage": "search",
+      "keys": [
+        "code",
+        "msg",
+        "data"
+      ]
+    },
+    {
+      "id": "gugu",
+      "stage": "vodDetail",
+      "keys": [
+        "vod",
+        "comment",
+        "same_list",
+        "vod_play_list",
+        "comment_list",
+        "is_collect",
+        "comment_count",
+        "advert",
+        "detail_advert",
+        "comment_advert",
+        "official_comment"
+      ]
+    },
+    {
+      "id": "gugu",
+      "stage": "init",
+      "keys": [
+        "banner_list",
+        "recommend_list",
+        "type_list",
+        "hot_search_list",
+        "update",
+        "notice",
+        "user_info",
+        "config",
+        "week_list",
+        "app_page_setting",
+        "system_ad_config",
+        "vip_ad_config",
+        "notice_count",
+        "icon_advert",
+        "home_advert",
+        "filter_words"
+      ]
+    },
+    {
+      "id": "jinpai",
+      "stage": "detail",
+      "keys": [
+        "code",
+        "msg",
+        "data"
+      ]
+    },
+    {
+      "id": "jinpai",
+      "stage": "play",
+      "keys": [
+        "code",
+        "msg",
+        "data"
+      ]
+    },
+    {
+      "id": "jinpai",
+      "stage": "list",
+      "keys": [
+        "code",
+        "msg",
+        "data"
+      ]
+    }
+  ]
+}

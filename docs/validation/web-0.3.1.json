@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-23T12:28:20.794Z",
+  "version": "0.3.1",
+  "origin": "http://127.0.0.1:65078",
+  "usingExistingUserProfile": true,
+  "preferredSource": "girigiri",
+  "preserved": {
+    "history": true,
+    "settings": true,
+    "sourceSettings": true,
+    "searchHistory": true,
+    "libraryIdentity": true
+  },
+  "sources": [
+    {
+      "id": "girigiri",
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": "anich",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "aki",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "erkuang",
+      "enabled": true,
+      "priority": 3
+    },
+    {
+      "id": "gugu",
+      "enabled": true,
+      "priority": 4
+    },
+    {
+      "id": "ledou",
+      "enabled": true,
+      "priority": 5
+    },
+    {
+      "id": "xifan",
+      "enabled": true,
+      "priority": 6
+    }
+  ],
+  "ok": true
+}

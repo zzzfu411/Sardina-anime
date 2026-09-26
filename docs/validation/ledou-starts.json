@@ -1,0 +1,218 @@
+{
+  "startedAt": "2026-09-23T10:55:35.576Z",
+  "checkedAt": "2026-09-23T10:57:09.419Z",
+  "browser": "153.0.8010.53",
+  "mode": "start-seek-resume",
+  "results": [
+    {
+      "sourceId": "ledou",
+      "animeId": "44290",
+      "title": "牛大力作妖记",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44290",
+        "lineId": "main",
+        "episodeId": "4271507"
+      },
+      "ok": true,
+      "startMs": 5054,
+      "duration": 967.08,
+      "width": 1920,
+      "height": 1080,
+      "frames": 55,
+      "seek": 90,
+      "savedPosition": 91.011597,
+      "resumedPosition": 91.028067,
+      "resumeError": 0.01646999999999821
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "44290",
+      "title": "牛大力作妖记",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44290",
+        "lineId": "main",
+        "episodeId": "4271508"
+      },
+      "ok": true,
+      "startMs": 4290,
+      "duration": 902.759998,
+      "width": 1920,
+      "height": 1080,
+      "frames": 55,
+      "seek": 90,
+      "savedPosition": 91.019747,
+      "resumedPosition": 91.034385,
+      "resumeError": 0.014638000000005036
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "44167",
+      "title": "狼与香辛料 第二季",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44167",
+        "lineId": "main",
+        "episodeId": "4270231"
+      },
+      "ok": true,
+      "startMs": 4374,
+      "duration": 1430.722222,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.009951,
+      "resumedPosition": 91.025416,
+      "resumeError": 0.015465000000006057
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "44167",
+      "title": "狼与香辛料 第二季",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44167",
+        "lineId": "main",
+        "episodeId": "4270232"
+      },
+      "ok": true,
+      "startMs": 4219,
+      "duration": 1430.5522,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.009659,
+      "resumedPosition": 91.021959,
+      "resumeError": 0.012299999999996203
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "44166",
+      "title": "狼与香辛料",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44166",
+        "lineId": "main",
+        "episodeId": "4270218"
+      },
+      "ok": true,
+      "startMs": 3712,
+      "duration": 1431.01255,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.021572,
+      "resumedPosition": 91.040386,
+      "resumeError": 0.018813999999991893
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "44166",
+      "title": "狼与香辛料",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44166",
+        "lineId": "main",
+        "episodeId": "4270219"
+      },
+      "ok": true,
+      "startMs": 4282,
+      "duration": 1431.011693,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.020939,
+      "resumedPosition": 91.042272,
+      "resumeError": 0.021332999999998492
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "44164",
+      "title": "狼与香辛料 行商邂逅贤狼",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44164",
+        "lineId": "main",
+        "episodeId": "4270182"
+      },
+      "ok": true,
+      "startMs": 5133,
+      "duration": 1430.012265,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.012771,
+      "resumedPosition": 91.034104,
+      "resumeError": 0.021332999999998492
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "44164",
+      "title": "狼与香辛料 行商邂逅贤狼",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44164",
+        "lineId": "main",
+        "episodeId": "4270183"
+      },
+      "ok": true,
+      "startMs": 4291,
+      "duration": 1430.053941,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.012638,
+      "resumedPosition": 91.033971,
+      "resumeError": 0.021332999999998492
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "1151",
+      "title": "葬送的芙莉莲 第二季",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "1151",
+        "lineId": "main",
+        "episodeId": "3708498"
+      },
+      "ok": true,
+      "startMs": 5471,
+      "duration": 1442.04,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.020793,
+      "resumedPosition": 91.040178,
+      "resumeError": 0.019384999999999764
+    },
+    {
+      "sourceId": "ledou",
+      "animeId": "1151",
+      "title": "葬送的芙莉莲 第二季",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "1151",
+        "lineId": "main",
+        "episodeId": "3708499"
+      },
+      "ok": true,
+      "startMs": 4045,
+      "duration": 1439.96,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.011839,
+      "resumedPosition": 91.021834,
+      "resumeError": 0.009995000000003529
+    }
+  ]
+}

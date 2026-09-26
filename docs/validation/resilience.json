@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-09-22T08:32:29.233Z",
+  "abruptExit": {
+    "signal": "SIGKILL",
+    "expected": 83.25,
+    "recovered": 83.25,
+    "ok": true
+  },
+  "mediaCycles": {
+    "iterations": 300,
+    "bytesPerCycle": 779927,
+    "measurements": [
+      {
+        "rss": 265355264,
+        "heapTotal": 61390848,
+        "heapUsed": 24285008,
+        "external": 27177364,
+        "arrayBuffers": 4972137
+      },
+      {
+        "rss": 269271040,
+        "heapTotal": 61390848,
+        "heapUsed": 22991504,
+        "external": 31071787,
+        "arrayBuffers": 4972137
+      },
+      {
+        "rss": 278921216,
+        "heapTotal": 61128704,
+        "heapUsed": 22541936,
+        "external": 64607446,
+        "arrayBuffers": 4972137
+      }
+    ],
+    "note": "In-process fixture streaming, forced GC; not a long-term leak proof."
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "version": "0.5.0",
+  "checkedAt": "2026-09-24T06:58:54.868Z",
+  "environment": "Chrome controlled fixtures",
+  "layouts": [
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "light",
+      "path": "/calendar?day=1",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "light",
+      "path": "/search",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/library",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/history",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "设置"
+    },
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "light",
+      "path": "/calendar?day=1",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "light",
+      "path": "/search",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/library",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/history",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "设置"
+    },
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "light",
+      "path": "/calendar?day=1",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "light",
+      "path": "/search",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/library",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/history",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "设置"
+    },
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "light",
+      "path": "/calendar?day=1",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "light",
+      "path": "/search",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/library",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "light",
+      "path": "/history",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "设置"
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "dark",
+      "path": "/calendar?day=1",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "dark",
+      "path": "/search",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/library",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/history",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 375,
+      "viewport": 375,
+      "documentWidth": 375,
+      "h1": "设置"
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "dark",
+      "path": "/calendar?day=1",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "dark",
+      "path": "/search",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/library",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/history",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 768,
+      "viewport": 768,
+      "documentWidth": 768,
+      "h1": "设置"
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "dark",
+      "path": "/calendar?day=1",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "dark",
+      "path": "/search",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/library",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/history",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 1024,
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "h1": "设置"
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "发现好故事"
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "番剧索引"
+    },
+    {
+      "theme": "dark",
+      "path": "/calendar?day=1",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "每周放送"
+    },
+    {
+      "theme": "dark",
+      "path": "/search",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "找一部想看的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/library",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "我的番剧"
+    },
+    {
+      "theme": "dark",
+      "path": "/history",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "观看记录"
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 1440,
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "h1": "设置"
+    }
+  ],
+  "errors": [],
+  "homeSearch": {
+    "url": "http://127.0.0.1:4182/search?q=%E6%98%9F%E7%A9%BA",
+    "ok": true
+  },
+  "contrast": [
+    {
+      "name": "light main",
+      "foreground": "#1b1815",
+      "background": "#d8d3cc",
+      "ratio": 11.88
+    },
+    {
+      "name": "light muted",
+      "foreground": "#575048",
+      "background": "#d8d3cc",
+      "ratio": 5.33
+    },
+    {
+      "name": "light panel muted",
+      "foreground": "#575048",
+      "background": "#cec8be",
+      "ratio": 4.77
+    },
+    {
+      "name": "light accent",
+      "foreground": "#8c3a2c",
+      "background": "#d8d3cc",
+      "ratio": 5.12
+    },
+    {
+      "name": "light action",
+      "foreground": "#e7e3db",
+      "background": "#3b352f",
+      "ratio": 9.45
+    },
+    {
+      "name": "light warning",
+      "foreground": "#795010",
+      "background": "#d8d3cc",
+      "ratio": 4.75
+    },
+    {
+      "name": "dark main",
+      "foreground": "#e9eef7",
+      "background": "#05080f",
+      "ratio": 17.21
+    },
+    {
+      "name": "dark muted",
+      "foreground": "#a0aec3",
+      "background": "#05080f",
+      "ratio": 8.91
+    },
+    {
+      "name": "dark panel muted",
+      "foreground": "#a0aec3",
+      "background": "#182235",
+      "ratio": 7.08
+    },
+    {
+      "name": "dark accent",
+      "foreground": "#aac7f5",
+      "background": "#05080f",
+      "ratio": 11.64
+    },
+    {
+      "name": "dark action",
+      "foreground": "#0a1528",
+      "background": "#b8cef0",
+      "ratio": 11.4
+    }
+  ],
+  "interactions": {
+    "pending": {
+      "summary": "1 个来源已返回；girigiri 仍待验证。 各来源独立搜索。",
+      "explanation": "girigiri 尚未返回结果；其他来源可独立搜索。验证后显示 girigiri 的结果。",
+      "otherResults": 1,
+      "input": ""
+    },
+    "captchaMobile": {
+      "width": 375,
+      "scrollWidth": 375
+    },
+    "onlyGirigiriBeforeVerification": 0,
+    "verifiedFixture": {
+      "cards": 1,
+      "challengeVisible": 0,
+      "noteVisible": 0,
+      "onlySyntheticCaptchaSubmitted": true
+    },
+    "systemPersists": true,
+    "night": {
+      "background": "rgb(5, 8, 15)",
+      "stars": true,
+      "animation": "none",
+      "decorativePointerEvents": "none"
+    },
+    "systemSwitches": true,
+    "searchShortcut": true,
+    "highContrast": "none",
+    "landscape": {
+      "width": 844,
+      "scrollWidth": 844
+    },
+    "errors": []
+  }
+}

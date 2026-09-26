@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-09-24T07:38:13.153350+00:00",
+  "version": "0.6.0",
+  "origin": "http://127.0.0.1:60168",
+  "defaultProfilePreserved": true,
+  "backupBeforeUpgrade": true,
+  "historyBefore": 3,
+  "historyAfter": 3,
+  "checks": {
+    "savedHistoryPreserved": true,
+    "libraryPreserved": true,
+    "settingsPreserved": true,
+    "sourceSettingsPreserved": true,
+    "searchHistoryPreserved": true
+  },
+  "sourceCount": 7,
+  "preferredSource": "girigiri",
+  "appearance": "light"
+}

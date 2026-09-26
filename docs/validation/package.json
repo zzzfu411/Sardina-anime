@@ -1,0 +1,16 @@
+{
+  "diskImageVerified": true,
+  "packagedRoots": [
+    "node_modules",
+    "desktop",
+    "engine",
+    "package.json",
+    "web"
+  ],
+  "nativeSqlitePresent": true,
+  "researchFilesIncluded": false,
+  "sha256": [
+    "72ff441553f1bfb3860688d0dd3861ebffe87dbc6a92f8cde27ed89eb76f9c4e  Revanime-0.1.0-arm64.dmg",
+    "29cddf1416b2425fb704e9648a622f12829b5abe9804420b53bddca8521670e9  Revanime-0.1.0-arm64.zip"
+  ]
+}

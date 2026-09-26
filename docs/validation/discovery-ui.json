@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-09-22T17:45:20.422Z",
+  "browser": "Chrome via Playwright CLI",
+  "anich": {
+    "filters": {
+      "year": "2024",
+      "type": "tv"
+    },
+    "firstPageCount": 50,
+    "secondPageCount": 50,
+    "overlap": 0,
+    "nextCursor": "33760",
+    "detailYearCrossCheck": {
+      "id": "34577",
+      "detailYear": 2025,
+      "filterYear": 2024
+    },
+    "screenshot": "output/playwright/catalog-live.png"
+  },
+  "akiCalendar": {
+    "weekday": 3,
+    "visibleTabs": 7,
+    "items": 0,
+    "message": "来源服务器返回 504",
+    "screenshot": "output/playwright/calendar-live.png"
+  }
+}

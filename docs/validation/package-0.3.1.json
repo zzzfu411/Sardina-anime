@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-23T12:27:10.759Z",
+  "version": "0.3.1",
+  "diskImageVerified": true,
+  "packagedRoots": [
+    "desktop",
+    "engine",
+    "node_modules",
+    "package.json",
+    "web"
+  ],
+  "nativeSqlitePresent": true,
+  "researchFilesIncluded": false,
+  "sha256": [
+    "c66b6686ca6fe77eaf6ef5e4fe955e537c97364e853aac4f6990db8d2985278a  Revanime-0.3.1-arm64.dmg",
+    "369ad66a0957fd58a7406d4f87ea8d746f88a29b7227ce620a24d37ce8297f25  Revanime-0.3.1-arm64.zip"
+  ]
+}

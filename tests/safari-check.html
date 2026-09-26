@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Revanime Safari 验证</title>
+    <style>
+      body {
+        background: #141924;
+        color: #eef1f7;
+        font: 18px system-ui;
+        margin: 40px;
+      }
+      button {
+        padding: 12px;
+        margin: 8px;
+      }
+      video {
+        width: 640px;
+        display: block;
+      }
+      canvas {
+        width: 240px;
+        border: 1px solid #abb7ff;
+      }
+      pre {
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Safari 原生媒体验证</h1>
+    <p>只播放本项目生成的测试信号；循环检查 MP4 与原生 HLS 的实际解码帧。</p>
+    <button id="start">开始验证 MP4 与 HLS</button><video id="video" controls muted playsinline></video>
+    <p>实际解码帧缩略图：</p>
+    <canvas id="canvas" width="48" height="27"></canvas>
+    <pre id="status">等待开始</pre>
+    <script src="/safari-check.js"></script>
+  </body>
+</html>

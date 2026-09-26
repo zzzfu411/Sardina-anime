@@ -1,0 +1,572 @@
+.management-toolbar {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin: 20px 0;
+}
+.management-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.management-field > span:first-child {
+  color: var(--muted);
+  font-size: 13px;
+}
+.management-field input,
+.management-field select {
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  min-height: 44px;
+  padding: 8px 12px;
+  font: inherit;
+  max-width: 100%;
+}
+.management-field.compact {
+  flex-direction: row;
+  align-items: center;
+}
+.management-search {
+  flex: 1 1 240px;
+}
+.management-search-input {
+  display: flex;
+  position: relative;
+}
+.management-search-input svg {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.management-search-input input {
+  width: 100%;
+  padding-left: 38px;
+}
+.management-check {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+}
+.management-check input,
+.management-entry-selector input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  flex: 0 0 auto;
+}
+.management-view {
+  display: flex;
+  gap: 8px;
+}
+.management-view .icon-button {
+  width: 44px;
+  height: 44px;
+}
+.management-view .selected {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.management-status-tabs {
+  flex-wrap: wrap;
+}
+.management-check-summary,
+.management-batch,
+.backup-restored {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  padding: 14px 16px;
+  margin: 16px 0;
+}
+.management-check-summary > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: space-between;
+}
+.management-check-summary small {
+  color: var(--muted);
+}
+.management-check-summary progress {
+  display: block;
+  width: 100%;
+  height: 8px;
+  accent-color: var(--accent);
+  margin-top: 12px;
+}
+.management-check-summary summary,
+.library-updates summary,
+.management-history-details summary,
+.backup-files > summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding: 12px 0;
+}
+.management-check-summary ul,
+.library-updates ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.management-check-summary li {
+  padding: 8px 0;
+}
+.management-check-summary li > button {
+  margin-left: 12px;
+}
+.management-inline-error {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  padding: 8px 0;
+  color: var(--danger);
+  overflow-wrap: anywhere;
+}
+.management-inline-error .text-link {
+  color: inherit;
+}
+.management-selection-bar,
+.management-batch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.management-selection-bar {
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.management-batch small {
+  width: 100%;
+  color: var(--muted);
+}
+.management-library-entry {
+  min-width: 0;
+  border-radius: var(--radius);
+}
+.management-library-entry.is-selected {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.management-entry-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px;
+  background: var(--panel);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.management-entry-selector span {
+  min-width: 0;
+  font-size: 13px;
+}
+.library-management-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  padding: 10px 0;
+}
+.library-management-tools .management-field {
+  width: 100%;
+}
+.library-management-tools select {
+  width: 100%;
+}
+.library-management-tools small {
+  font-size: 12px;
+}
+.library-management-tools .button {
+  min-height: 44px;
+}
+.library-updates {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+.library-updates summary {
+  color: var(--accent);
+}
+.library-updates li {
+  padding: 4px 0;
+}
+.library-updates li small {
+  display: block;
+  color: var(--muted);
+}
+.library-updates ul {
+  max-height: 240px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.library-updates p {
+  margin: 4px 0;
+}
+.library-updates > button {
+  margin: 8px 0;
+}
+.management-library-list {
+  display: grid;
+  gap: 0;
+}
+.management-library-row {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.management-library-row > a {
+  flex: 0 0 100px;
+}
+.management-library-row .cover {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+}
+.management-library-copy {
+  flex: 1;
+  min-width: 0;
+}
+.management-library-copy .tile-title {
+  font-size: 21px;
+}
+.management-library-copy > p {
+  margin: 4px 0 8px;
+}
+.management-library-row .library-management-tools {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 0;
+}
+.management-library-row .library-management-tools .management-field {
+  width: auto;
+}
+.management-library-row .library-management-tools > small {
+  flex-basis: 100%;
+}
+.management-library-row .library-updates {
+  flex-basis: 100%;
+}
+.management-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px 0;
+}
+.management-pagination .button {
+  min-height: 44px;
+}
+.management-filter-note {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 44px;
+}
+.management-count {
+  margin: 8px 0 20px;
+}
+.management-history-groups {
+  display: grid;
+  gap: 20px;
+}
+.management-history-group {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 20px;
+  min-width: 0;
+}
+.management-history-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.management-history-heading > .cover {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 90px;
+}
+.management-history-heading-copy {
+  flex: 1;
+  min-width: 0;
+}
+.management-history-heading h2 {
+  margin: 0;
+  font-size: 23px;
+  overflow-wrap: anywhere;
+}
+.management-history-heading p {
+  margin: 5px 0;
+  color: var(--secondary-text);
+}
+.management-history-heading .button {
+  flex-shrink: 0;
+  min-height: 44px;
+}
+.management-history-details {
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.management-history-records {
+  display: grid;
+  gap: 0;
+}
+.management-history-record {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.management-history-record-copy {
+  flex: 1;
+  min-width: 0;
+}
+.management-history-record-copy p {
+  margin: 2px 0;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.management-history-record-copy .progress {
+  max-width: 300px;
+  margin: 8px 0;
+}
+.management-history-record-copy small {
+  color: var(--muted);
+}
+.management-record-actions,
+.management-history-group-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.management-record-actions .button,
+.management-record-actions .icon-button,
+.management-record-actions .text-link {
+  min-height: 44px;
+}
+.management-record-actions .icon-button {
+  min-width: 44px;
+}
+.management-history-group-actions {
+  justify-content: flex-end;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+.management-history-group-actions .text-link,
+.management-selection-bar .text-link,
+.management-batch .text-link {
+  min-height: 44px;
+}
+.backup-manager {
+  min-width: 0;
+}
+.backup-manager .backup-drop-zone {
+  gap: 16px;
+}
+.backup-manager .button-row {
+  flex-wrap: wrap;
+}
+.backup-manager .button,
+.backup-manager .icon-button {
+  min-height: 44px;
+}
+.backup-restored {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+}
+.backup-restored code {
+  width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+.backup-files {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.backup-files > summary {
+  font-weight: 600;
+}
+.backup-directory {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 12px 0;
+}
+.backup-directory > span {
+  color: var(--muted);
+}
+.backup-directory code {
+  flex: 1 1 240px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+.backup-directory .icon-button {
+  width: 44px;
+  height: 44px;
+}
+.backup-file-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 20px;
+}
+.backup-file-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.backup-file-list li > div:first-child {
+  min-width: 0;
+}
+.backup-file-list p {
+  margin: 3px 0;
+  color: var(--secondary-text);
+}
+.backup-file-list small {
+  display: block;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.management-dialog {
+  color: var(--text);
+  background: var(--elevated);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-float);
+  padding: 24px;
+  width: min(620px, calc(100% - 32px));
+  max-height: calc(100dvh - 48px);
+  overflow: auto;
+}
+.management-dialog::backdrop {
+  background: rgb(0 0 0 / 58%);
+}
+.management-dialog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.management-dialog-heading h2 {
+  font-size: 27px;
+  margin: 0;
+}
+.management-dialog-heading .icon-button {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+.backup-preview-name {
+  overflow-wrap: anywhere;
+  margin-bottom: 4px;
+}
+.backup-preview-counts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 20px 0;
+  padding: 12px 0;
+  gap: 16px;
+}
+.backup-preview-counts dt {
+  color: var(--muted);
+  font-size: 13px;
+}
+.backup-preview-counts dd {
+  margin: 4px 0 0;
+  font-size: 21px;
+}
+.backup-preview-counts dd span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+.management-dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+@media (max-width: 600px) {
+  .management-toolbar {
+    gap: 12px;
+  }
+  .management-search {
+    flex-basis: 100%;
+  }
+  .management-toolbar > .management-field:not(.management-search) {
+    flex: 1 1 130px;
+  }
+  .management-view {
+    margin-left: auto;
+  }
+  .management-library-row {
+    gap: 12px;
+  }
+  .management-library-row > a {
+    flex-basis: 72px;
+  }
+  .management-library-copy .tile-title {
+    font-size: 18px;
+  }
+  .management-history-group {
+    padding: 14px;
+  }
+  .management-history-heading {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .management-history-heading h2 {
+    font-size: 21px;
+  }
+  .management-history-heading .button {
+    grid-column: 2;
+    justify-self: start;
+  }
+  .management-history-record {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .management-record-actions {
+    justify-content: flex-start;
+  }
+  .management-history-group-actions {
+    justify-content: flex-start;
+  }
+  .management-dialog {
+    padding: 18px;
+  }
+  .management-dialog-heading h2 {
+    font-size: 24px;
+  }
+  .backup-manager .backup-drop-zone {
+    align-items: flex-start;
+  }
+}

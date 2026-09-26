@@ -1,0 +1,17 @@
+{
+  "version": "0.6.1",
+  "checkedAt": "2026-09-24T07:59:43.581395+00:00",
+  "origin": "http://127.0.0.1:60893",
+  "backupBeforeUpgrade": true,
+  "defaultProfilePreserved": true,
+  "historyBefore": 3,
+  "historyAfter": 3,
+  "checks": {
+    "savedHistoryPreserved": true,
+    "libraryPreserved": true,
+    "settingsPreserved": true,
+    "sourceSettingsPreserved": true,
+    "searchHistoryPreserved": true
+  },
+  "appearance": "light"
+}

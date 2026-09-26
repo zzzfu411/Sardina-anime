@@ -1,0 +1,224 @@
+{
+  "version": "0.4.0",
+  "checkedAt": "2026-09-24T03:06:35.674178+00:00",
+  "scope": "Chrome CLI visual and interaction checks on isolated profile, plus packaged Electron verification",
+  "saved": {
+    "theme": "light",
+    "preference": "light"
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "navCount": 5
+  },
+  "dialog": {
+    "initiallyInside": true,
+    "staysInside": true,
+    "escapeCloses": true,
+    "focusReturned": true
+  },
+  "appearanceAndKeyboard": {
+    "systemPersists": true,
+    "systemLiveSwitch": true,
+    "failedSaveRollsBack": true,
+    "searchFocused": true,
+    "reducedMotion": true
+  },
+  "layouts": [
+    {
+      "path": "/",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/catalog",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/calendar",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/library",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/history",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/settings",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/catalog",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/calendar",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/library",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/history",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/settings",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/catalog",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/calendar",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/library",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/history",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/settings",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/catalog",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/calendar",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/library",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/history",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/settings",
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  ],
+  "searchShortcut": true,
+  "settingsShortcut": true,
+  "sourceCopyWidth": 304,
+  "filters": {
+    "expanded": true,
+    "collapsed": true
+  },
+  "colorContrast": [
+    {
+      "foreground": "#b0b2be",
+      "background": "#30343e",
+      "ratio": 5.9
+    },
+    {
+      "foreground": "#626270",
+      "background": "#efeff3",
+      "ratio": 5.23
+    },
+    {
+      "foreground": "#9e3653",
+      "background": "#f5f5f7",
+      "ratio": 6.21
+    },
+    {
+      "foreground": "#ee97ad",
+      "background": "#272a33",
+      "ratio": 6.6
+    },
+    {
+      "foreground": "#30212a",
+      "background": "#ee97ad",
+      "ratio": 7.02
+    },
+    {
+      "foreground": "#ffffff",
+      "background": "#9e3653",
+      "ratio": 6.76
+    }
+  ],
+  "screenshots": [
+    "output/playwright/redesign-catalog-light-0.4.0.png",
+    "output/playwright/redesign-catalog-mobile-0.4.0.png",
+    "output/playwright/redesign-detail-dark-0.4.0.png",
+    "output/playwright/redesign-detail-mobile-0.4.0.png",
+    "output/playwright/redesign-home-dark-0.4.0.png",
+    "output/playwright/redesign-home-light-0.4.0.png",
+    "output/playwright/redesign-home-mobile-0.4.0.png",
+    "output/playwright/redesign-mobile-more-0.4.0.png",
+    "output/playwright/redesign-settings-dark-0.4.0.png",
+    "output/playwright/redesign-settings-mobile-0.4.0.png"
+  ],
+  "visualReview": {
+    "homeDark": true,
+    "homeLight": true,
+    "catalogDesktop": true,
+    "catalogMobile": true,
+    "settingsMobile": true,
+    "detailDesktop": true,
+    "detailMobile": true,
+    "fixturePlayer": true
+  },
+  "automation": {
+    "typecheck": true,
+    "unitTestsPassed": 124,
+    "browserFlowsPassed": 12
+  },
+  "limitations": [
+    "Color checks cover listed foreground/background pairs, not a complete accessibility audit.",
+    "No new Safari or full-episode source playback validation in this UI release."
+  ],
+  "additionalInteractions": {
+    "weekdayKeyboard": true,
+    "syntheticBackupDropShowsConfirmation": true,
+    "backupConfirmationDismissed": true
+  }
+}

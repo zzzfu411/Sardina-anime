@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-09-23T12:17:00.264Z",
+  "version": "0.3.1",
+  "results": [
+    {
+      "name": "home",
+      "ms": 1312,
+      "upstreamReads": 1,
+      "items": [
+        30
+      ],
+      "ok": true
+    },
+    {
+      "name": "catalog",
+      "ms": 835,
+      "upstreamReads": 1,
+      "items": [
+        48
+      ],
+      "ok": true
+    },
+    {
+      "name": "detail",
+      "ms": 464,
+      "upstreamReads": 1,
+      "items": [
+        null
+      ],
+      "ok": true
+    },
+    {
+      "name": "schedule",
+      "ms": 735,
+      "upstreamReads": 1,
+      "items": [
+        10
+      ],
+      "ok": true
+    },
+    {
+      "name": "home-and-schedule-shared",
+      "ms": 841,
+      "upstreamReads": 1,
+      "items": [
+        30,
+        10
+      ],
+      "ok": true
+    },
+    {
+      "name": "switch-weekdays",
+      "ms": 18,
+      "upstreamReads": 0,
+      "items": [
+        11,
+        6
+      ],
+      "ok": true
+    },
+    {
+      "name": "catalog-three-windows",
+      "ms": 439,
+      "upstreamReads": 1,
+      "items": [
+        48,
+        48,
+        48
+      ],
+      "ok": true
+    },
+    {
+      "name": "catalog-cached",
+      "ms": 1,
+      "upstreamReads": 0,
+      "items": [
+        48
+      ],
+      "ok": true
+    },
+    {
+      "name": "schedule-manual-refresh",
+      "ms": 742,
+      "upstreamReads": 1,
+      "items": [
+        10
+      ],
+      "ok": true
+    }
+  ]
+}

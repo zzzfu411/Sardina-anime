@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-23T11:29:06.903Z",
+  "catalog": {
+    "count": 24,
+    "total": 191,
+    "hasMore": true,
+    "years": [
+      2024
+    ]
+  },
+  "candidates": [
+    {
+      "id": "3385",
+      "title": "天是红河岸",
+      "episodes": 12
+    },
+    {
+      "id": "3427",
+      "title": "拯救替身千金的是冷酷无情冰之王子的爱",
+      "episodes": 12
+    },
+    {
+      "id": "3400",
+      "title": "与你相恋到生命尽头",
+      "episodes": 12
+    },
+    {
+      "id": "3398",
+      "title": "感谢对战。 ～大小姐才不玩格斗游戏～",
+      "episodes": 12
+    },
+    {
+      "id": "3294",
+      "title": "欺诈游戏",
+      "episodes": 25
+    }
+  ]
+}

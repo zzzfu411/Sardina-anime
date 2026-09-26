@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-09-24T03:05:33.416744+00:00",
+  "version": "0.4.0",
+  "origin": "http://127.0.0.1:53006",
+  "usingExistingUserProfile": true,
+  "previousEngineAlreadyStopped": true,
+  "preUpgradeDigestComparison": "not available: previous engine endpoint refused the connection",
+  "preferredSource": "girigiri",
+  "appearance": "dark",
+  "existingDataReadable": {
+    "library": 0,
+    "history": 2,
+    "searchHistory": 1,
+    "sourceSettings": 7
+  },
+  "sources": [
+    {
+      "id": "girigiri",
+      "enabled": true,
+      "priority": 0
+    },
+    {
+      "id": "anich",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "aki",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "erkuang",
+      "enabled": true,
+      "priority": 3
+    },
+    {
+      "id": "gugu",
+      "enabled": true,
+      "priority": 4
+    },
+    {
+      "id": "ledou",
+      "enabled": true,
+      "priority": 5
+    },
+    {
+      "id": "xifan",
+      "enabled": true,
+      "priority": 6
+    }
+  ],
+  "ok": true
+}

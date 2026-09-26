@@ -1,0 +1,377 @@
+{
+  "startedAt": "2026-09-22T07:28:39.996Z",
+  "checkedAt": "2026-09-22T07:34:59.026Z",
+  "browser": "153.0.8010.53",
+  "mode": "start-seek-resume",
+  "results": [
+    {
+      "sourceId": "aki",
+      "animeId": "N3cDDE",
+      "title": "超超超超超喜欢你的100个女朋友 第三季",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "N3cDDE",
+        "lineId": "1",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 10434,
+      "duration": 1430.033244,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.007677,
+      "resumedPosition": 91.016714,
+      "resumeError": 0.00903699999999219
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "38493",
+      "title": "Re：从零开始的异世界生活 第四季 夺还篇",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38493",
+        "lineId": "auto",
+        "episodeId": "78"
+      },
+      "ok": true,
+      "startMs": 8857,
+      "duration": 1420.023244,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.006451,
+      "resumedPosition": 91.01968,
+      "resumeError": 0.013228999999995494
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "38493",
+      "title": "Re：从零开始的异世界生活 第四季 夺还篇",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38493",
+        "lineId": "auto",
+        "episodeId": "79"
+      },
+      "ok": true,
+      "startMs": 7257,
+      "duration": 1740.009577,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.008177,
+      "resumedPosition": 91.021669,
+      "resumeError": 0.013491999999999393
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "N3cDDE",
+      "title": "超超超超超喜欢你的100个女朋友 第三季",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "N3cDDE",
+        "lineId": "1",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 9553,
+      "duration": 1430.033244,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.004565,
+      "resumedPosition": 91.020576,
+      "resumeError": 0.016011000000005993
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "37654",
+      "title": "葬送的芙莉莲 第二季",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "37654",
+        "lineId": "auto",
+        "episodeId": "29"
+      },
+      "ok": true,
+      "startMs": 4647,
+      "duration": 1440.084853,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.016369,
+      "resumedPosition": 91.027212,
+      "resumeError": 0.010843000000008374
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "37654",
+      "title": "葬送的芙莉莲 第二季",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "37654",
+        "lineId": "auto",
+        "episodeId": "30"
+      },
+      "ok": true,
+      "startMs": 3222,
+      "duration": 1440.102,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.006791,
+      "resumedPosition": 91.02488,
+      "resumeError": 0.01808899999998914
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "u3cDDE",
+      "title": "尼古喵喵",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "u3cDDE",
+        "lineId": "1",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 10997,
+      "duration": 1420.032,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.015272,
+      "resumedPosition": 91.033142,
+      "resumeError": 0.01787000000000205
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "32339",
+      "title": "葬送的芙莉莲",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "32339",
+        "lineId": "auto",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 3506,
+      "duration": 1559.986009,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.002039,
+      "resumedPosition": 91.017194,
+      "resumeError": 0.015155000000007135
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "32339",
+      "title": "葬送的芙莉莲",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "32339",
+        "lineId": "auto",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 4224,
+      "duration": 1560.079002,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.00488,
+      "resumedPosition": 91.01929,
+      "resumeError": 0.014409999999998035
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "38373",
+      "title": "穹庐下的魔女",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38373",
+        "lineId": "auto",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 3694,
+      "duration": 1428.114666,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.019043,
+      "resumedPosition": 91.03737,
+      "resumeError": 0.018326999999999316
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "38373",
+      "title": "穹庐下的魔女",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38373",
+        "lineId": "auto",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 3220,
+      "duration": 1423.109666,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.014699,
+      "resumedPosition": 91.029476,
+      "resumeError": 0.014777000000009366
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "u3cDDE",
+      "title": "尼古喵喵",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "u3cDDE",
+        "lineId": "1",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 13452,
+      "duration": 1420.074667,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.009382,
+      "resumedPosition": 91.022438,
+      "resumeError": 0.013055999999991741
+    },
+    {
+      "sourceId": "anich",
+      "animeId": "38359",
+      "stage": "detail",
+      "ok": false,
+      "error": "Error: Detail HTTP 502"
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "G3cDDE",
+      "title": "BanG Dream! YUME∞MITA",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "G3cDDE",
+        "lineId": "1",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 8382,
+      "duration": 1420.032,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.019433,
+      "resumedPosition": 91.036268,
+      "resumeError": 0.016835000000000377
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "G3cDDE",
+      "title": "BanG Dream! YUME∞MITA",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "G3cDDE",
+        "lineId": "1",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 8119,
+      "duration": 1420.032,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.00812,
+      "resumedPosition": 91.021905,
+      "resumeError": 0.013784999999998604
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "1EcDDE",
+      "title": "葬送的芙莉莲 第二季",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "1EcDDE",
+        "lineId": "1",
+        "episodeId": "1"
+      },
+      "ok": false,
+      "error": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "1EcDDE",
+      "title": "葬送的芙莉莲 第二季",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "1EcDDE",
+        "lineId": "1",
+        "episodeId": "2"
+      },
+      "ok": false,
+      "error": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "dPDDDE",
+      "title": "葬送的芙莉莲",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "dPDDDE",
+        "lineId": "5",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 9982,
+      "duration": 1560.65712,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.012241,
+      "resumedPosition": 91.028357,
+      "resumeError": 0.01611599999999669
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "dPDDDE",
+      "title": "葬送的芙莉莲",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "dPDDDE",
+        "lineId": "5",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 8766,
+      "duration": 1560.604989,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.005097,
+      "resumedPosition": 91.025097,
+      "resumeError": 0.01999999999999602
+    }
+  ]
+}

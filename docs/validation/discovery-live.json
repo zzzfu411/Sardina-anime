@@ -1,0 +1,243 @@
+{
+  "runs": [
+    {
+      "checkedAt": "2026-09-22T17:15:40.808Z",
+      "records": [
+        {
+          "stage": "aki-catalog",
+          "ok": false,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "aki-schedule",
+          "ok": false,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "anich-catalog",
+          "ok": false,
+          "message": "来源服务器返回 502"
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-09-22T17:18:15.325Z",
+      "records": [
+        {
+          "stage": "aki-catalog",
+          "ok": true,
+          "ms": 3923,
+          "count": 40,
+          "page": 1,
+          "hasMore": true,
+          "total": 43,
+          "examples": [
+            {
+              "id": "sPEDDE",
+              "title": "Re：从零开始的异世界生活 第三季",
+              "year": 2024
+            },
+            {
+              "id": "b8EDDE",
+              "title": "败犬女主太多了！",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "stage": "aki-schedule",
+          "ok": false,
+          "ms": 912,
+          "message": "AkiAnime 目录缺少有效番剧编号"
+        },
+        {
+          "stage": "anich-catalog",
+          "ok": true,
+          "ms": 890,
+          "count": 0,
+          "page": 2,
+          "hasMore": false,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-09-22T17:32:11.781Z",
+      "records": [
+        {
+          "stage": "aki-catalog",
+          "ok": false,
+          "ms": 12557,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "aki-schedule",
+          "ok": false,
+          "ms": 10994,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "anich-catalog-first",
+          "ok": false,
+          "ms": 1093,
+          "message": "来源服务器返回 502"
+        },
+        {
+          "stage": "anich-catalog-next",
+          "ok": false,
+          "ms": 1,
+          "message": "First-page continuation unavailable"
+        },
+        {
+          "stage": "anich-search-first",
+          "ok": false,
+          "ms": 3062,
+          "message": "来源服务器返回 502"
+        },
+        {
+          "stage": "anich-search-next",
+          "ok": false,
+          "ms": 1,
+          "message": "First search continuation unavailable"
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-09-22T17:33:22.762Z",
+      "records": [
+        {
+          "stage": "aki-catalog",
+          "ok": false,
+          "ms": 12453,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "aki-schedule",
+          "ok": false,
+          "ms": 10991,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "anich-catalog-first",
+          "ok": false,
+          "ms": 1100,
+          "message": "来源服务器返回 502"
+        },
+        {
+          "stage": "anich-catalog-next",
+          "ok": false,
+          "ms": 1,
+          "message": "First-page continuation unavailable"
+        },
+        {
+          "stage": "anich-search-first",
+          "ok": false,
+          "ms": 898,
+          "message": "来源服务器返回 502"
+        },
+        {
+          "stage": "anich-search-next",
+          "ok": false,
+          "ms": 0,
+          "message": "First search continuation unavailable"
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-09-22T17:41:03.343Z",
+      "records": [
+        {
+          "stage": "aki-catalog",
+          "ok": false,
+          "ms": 11955,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "aki-schedule",
+          "ok": false,
+          "ms": 10985,
+          "message": "来源服务器返回 504"
+        },
+        {
+          "stage": "anich-catalog-first",
+          "ok": true,
+          "ms": 11365,
+          "count": 50,
+          "page": 1,
+          "hasMore": true,
+          "nextCursor": "33693",
+          "examples": [
+            {
+              "id": "34577",
+              "title": "平凡上班族到异世界当上了四天王的故事",
+              "year": 2024
+            },
+            {
+              "id": "34558",
+              "title": "命运-奇异赝品",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "stage": "anich-catalog-next",
+          "ok": true,
+          "ms": 10093,
+          "count": 50,
+          "page": 2,
+          "hasMore": true,
+          "nextCursor": "33299",
+          "examples": [
+            {
+              "id": "33682",
+              "title": "刀剑神域外传 Gun Gale Online 第二季",
+              "year": 2024
+            },
+            {
+              "id": "33673",
+              "title": "一兆游戏",
+              "year": 2024
+            }
+          ]
+        },
+        {
+          "stage": "anich-search-first",
+          "ok": true,
+          "ms": 7048,
+          "count": 50,
+          "page": 1,
+          "hasMore": true,
+          "nextCursor": "31920",
+          "examples": [
+            {
+              "id": "38493",
+              "title": "Re：从零开始的异世界生活 第四季 夺还篇"
+            },
+            {
+              "id": "38398",
+              "title": "无用圣女的异世界美食之旅 凭借隐藏技能召唤露营车"
+            }
+          ]
+        },
+        {
+          "stage": "anich-search-next",
+          "ok": true,
+          "ms": 7068,
+          "count": 46,
+          "page": 2,
+          "hasMore": false,
+          "examples": [
+            {
+              "id": "31925",
+              "title": "为了养老金去异世界存八万金"
+            },
+            {
+              "id": "31919",
+              "title": "最强阴阳师的异世界转生记"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

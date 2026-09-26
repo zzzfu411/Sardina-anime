@@ -1,0 +1,368 @@
+{
+  "checkedAt": "2026-09-22T07:04:34.854Z",
+  "mode": "catalog-and-media-probe",
+  "note": "HTTP checks are not full playback verification",
+  "sources": [
+    {
+      "sourceId": "anich",
+      "stages": [
+        {
+          "name": "home",
+          "value": {
+            "sections": 4,
+            "items": 120
+          }
+        },
+        {
+          "name": "search",
+          "value": {
+            "items": 3
+          }
+        },
+        {
+          "name": "detail",
+          "value": {
+            "id": "38493",
+            "title": "Re：从零开始的异世界生活 第四季 夺还篇",
+            "lines": [
+              {
+                "id": "auto",
+                "name": "自动选择",
+                "episodes": 6
+              }
+            ]
+          }
+        },
+        {
+          "name": "resolved",
+          "value": {
+            "locator": {
+              "sourceId": "anich",
+              "animeId": "38493",
+              "lineId": "auto",
+              "episodeId": "78"
+            },
+            "format": "mp4",
+            "host": "v1.adkwai.com"
+          }
+        },
+        {
+          "name": "media",
+          "value": {
+            "animeId": "38493",
+            "title": "Re：从零开始的异世界生活 第四季 夺还篇",
+            "locator": {
+              "sourceId": "anich",
+              "animeId": "38493",
+              "lineId": "auto",
+              "episodeId": "78"
+            },
+            "mediaType": "mp4",
+            "status": 206,
+            "contentType": "video/mp4",
+            "hls": false,
+            "ok": true
+          }
+        },
+        {
+          "name": "detail",
+          "value": {
+            "id": "38374",
+            "title": "尼古喵喵",
+            "lines": [
+              {
+                "id": "auto",
+                "name": "自动选择",
+                "episodes": 11
+              }
+            ]
+          }
+        },
+        {
+          "name": "resolved",
+          "value": {
+            "locator": {
+              "sourceId": "anich",
+              "animeId": "38374",
+              "lineId": "auto",
+              "episodeId": "1"
+            },
+            "format": "mp4",
+            "host": "v1.adkwai.com"
+          }
+        },
+        {
+          "name": "media",
+          "value": {
+            "animeId": "38374",
+            "title": "尼古喵喵",
+            "locator": {
+              "sourceId": "anich",
+              "animeId": "38374",
+              "lineId": "auto",
+              "episodeId": "1"
+            },
+            "mediaType": "mp4",
+            "status": 206,
+            "contentType": "video/mp4",
+            "hls": false,
+            "ok": true
+          }
+        },
+        {
+          "name": "detail",
+          "value": {
+            "id": "38419",
+            "title": "无职转生 第三季 ～到了异世界就拿出真本事～",
+            "lines": [
+              {
+                "id": "auto",
+                "name": "自动选择",
+                "episodes": 13
+              }
+            ]
+          }
+        },
+        {
+          "name": "resolved",
+          "value": {
+            "locator": {
+              "sourceId": "anich",
+              "animeId": "38419",
+              "lineId": "auto",
+              "episodeId": "1"
+            },
+            "format": "mp4",
+            "host": "v1.adkwai.com"
+          }
+        },
+        {
+          "name": "media",
+          "value": {
+            "animeId": "38419",
+            "title": "无职转生 第三季 ～到了异世界就拿出真本事～",
+            "locator": {
+              "sourceId": "anich",
+              "animeId": "38419",
+              "lineId": "auto",
+              "episodeId": "1"
+            },
+            "mediaType": "mp4",
+            "status": 206,
+            "contentType": "video/mp4",
+            "hls": false,
+            "ok": true
+          }
+        }
+      ],
+      "samples": [
+        {
+          "animeId": "38493",
+          "title": "Re：从零开始的异世界生活 第四季 夺还篇",
+          "locator": {
+            "sourceId": "anich",
+            "animeId": "38493",
+            "lineId": "auto",
+            "episodeId": "78"
+          },
+          "mediaType": "mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "hls": false,
+          "ok": true
+        },
+        {
+          "animeId": "38374",
+          "title": "尼古喵喵",
+          "locator": {
+            "sourceId": "anich",
+            "animeId": "38374",
+            "lineId": "auto",
+            "episodeId": "1"
+          },
+          "mediaType": "mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "hls": false,
+          "ok": true
+        },
+        {
+          "animeId": "38419",
+          "title": "无职转生 第三季 ～到了异世界就拿出真本事～",
+          "locator": {
+            "sourceId": "anich",
+            "animeId": "38419",
+            "lineId": "auto",
+            "episodeId": "1"
+          },
+          "mediaType": "mp4",
+          "status": 206,
+          "contentType": "video/mp4",
+          "hls": false,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "sourceId": "aki",
+      "stages": [
+        {
+          "name": "home",
+          "value": {
+            "sections": 1,
+            "items": 24
+          }
+        },
+        {
+          "name": "search",
+          "value": {
+            "items": 2
+          }
+        },
+        {
+          "name": "detail",
+          "value": {
+            "id": "N3cDDE",
+            "title": "超超超超超喜欢你的100个女朋友 第三季",
+            "lines": [
+              {
+                "id": "1",
+                "name": "超高画三线",
+                "episodes": 7
+              },
+              {
+                "id": "3",
+                "name": "【超高画四线】",
+                "episodes": 7
+              },
+              {
+                "id": "2",
+                "name": "中画-",
+                "episodes": 12
+              }
+            ]
+          }
+        },
+        {
+          "name": "resolved",
+          "value": {
+            "locator": {
+              "sourceId": "aki",
+              "animeId": "N3cDDE",
+              "lineId": "1",
+              "episodeId": "1"
+            },
+            "format": "auto",
+            "host": "hcyykj-eos-hhht5-01.eos.huhehaote-8.cmecloud.cn"
+          }
+        },
+        {
+          "name": "media",
+          "value": {
+            "animeId": "N3cDDE",
+            "title": "超超超超超喜欢你的100个女朋友 第三季",
+            "locator": {
+              "sourceId": "aki",
+              "animeId": "N3cDDE",
+              "lineId": "1",
+              "episodeId": "1"
+            },
+            "mediaType": "auto",
+            "status": 206,
+            "contentType": "video/mp4",
+            "hls": false,
+            "ok": true
+          }
+        },
+        {
+          "name": "media",
+          "value": {
+            "locator": {
+              "sourceId": "aki",
+              "animeId": "N3cDDE",
+              "lineId": "3",
+              "episodeId": "1"
+            },
+            "ok": false,
+            "code": "UNSUPPORTED_LINE",
+            "message": "这一线路需要页面播放器，请尝试其他线路"
+          }
+        },
+        {
+          "name": "resolved",
+          "value": {
+            "locator": {
+              "sourceId": "aki",
+              "animeId": "N3cDDE",
+              "lineId": "2",
+              "episodeId": "1"
+            },
+            "format": "hls",
+            "host": "bfeng11.com"
+          }
+        },
+        {
+          "name": "media",
+          "value": {
+            "animeId": "N3cDDE",
+            "title": "超超超超超喜欢你的100个女朋友 第三季",
+            "locator": {
+              "sourceId": "aki",
+              "animeId": "N3cDDE",
+              "lineId": "2",
+              "episodeId": "1"
+            },
+            "mediaType": "hls",
+            "status": 404,
+            "contentType": "text/html; charset=utf-8",
+            "hls": false,
+            "ok": false
+          }
+        }
+      ],
+      "samples": [
+        {
+          "animeId": "N3cDDE",
+          "title": "超超超超超喜欢你的100个女朋友 第三季",
+          "locator": {
+            "sourceId": "aki",
+            "animeId": "N3cDDE",
+            "lineId": "1",
+            "episodeId": "1"
+          },
+          "mediaType": "auto",
+          "status": 206,
+          "contentType": "video/mp4",
+          "hls": false,
+          "ok": true
+        },
+        {
+          "locator": {
+            "sourceId": "aki",
+            "animeId": "N3cDDE",
+            "lineId": "3",
+            "episodeId": "1"
+          },
+          "ok": false,
+          "code": "UNSUPPORTED_LINE",
+          "message": "这一线路需要页面播放器，请尝试其他线路"
+        },
+        {
+          "animeId": "N3cDDE",
+          "title": "超超超超超喜欢你的100个女朋友 第三季",
+          "locator": {
+            "sourceId": "aki",
+            "animeId": "N3cDDE",
+            "lineId": "2",
+            "episodeId": "1"
+          },
+          "mediaType": "hls",
+          "status": 404,
+          "contentType": "text/html; charset=utf-8",
+          "hls": false,
+          "ok": false
+        }
+      ]
+    }
+  ]
+}

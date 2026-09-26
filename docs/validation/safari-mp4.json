@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-22T08:35:39.168Z",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0 Safari/605.1.15",
+  "results": [
+    {
+      "format": "mp4",
+      "ok": true,
+      "frames": 280,
+      "time": 24,
+      "width": 480,
+      "height": 270,
+      "paused": true,
+      "readyState": 4,
+      "visibility": "hidden",
+      "colorPixels": 1295
+    }
+  ]
+}

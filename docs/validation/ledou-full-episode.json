@@ -1,0 +1,35 @@
+{
+  "startedAt": "2026-09-23T10:54:38.872Z",
+  "checkedAt": "2026-09-23T10:57:14.061Z",
+  "browser": "153.0.8010.53",
+  "mode": "continuous-playback-at-1x",
+  "results": [
+    {
+      "sourceId": "ledou",
+      "animeId": "229",
+      "title": "葬送的芙莉莲",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "229",
+        "lineId": "main",
+        "episodeId": "3907091"
+      },
+      "ok": false,
+      "startMs": 4678,
+      "duration": 1559.537446,
+      "width": 0,
+      "height": 0,
+      "frames": 0,
+      "last": {
+        "time": 142.556945,
+        "ended": false,
+        "paused": true,
+        "error": 4,
+        "frames": 0,
+        "dropped": 0
+      },
+      "elapsedSeconds": 155,
+      "error": "Error: HTML media error 4"
+    }
+  ]
+}

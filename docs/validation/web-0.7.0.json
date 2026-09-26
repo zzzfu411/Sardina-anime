@@ -1,0 +1,18 @@
+{
+  "version": "0.7.0",
+  "checkedAt": "2026-09-24T09:20:59.836Z",
+  "origin": "http://127.0.0.1:65328",
+  "historyCount": 3,
+  "libraryCount": 0,
+  "preserved": {
+    "history": true,
+    "library": true,
+    "settings": true,
+    "sourceSettings": true,
+    "searchHistory": true
+  },
+  "bangumiLinkCount": 0,
+  "bangumiApiWorking": true,
+  "appearance": "light",
+  "backup": ".cache/update-0.7.0/before.json"
+}

@@ -1,0 +1,89 @@
+[
+  {
+    "verdict": "confirmed",
+    "title": "AniCh Protobuf repeated-field parsing can block the local engine (fixed in this continuation)",
+    "description": "At the reviewed baseline 95dccdd, repeated fields copied the entire accumulated array for each value. A local fixture containing 100000 empty field-1 records (200000 bytes) took 16007.96 ms in the initial reviewer run; an independent reviewer verified superlinear growth through AniChSource.search at 2000–16000 records. All evidence was local and synthetic. The current working tree replaces copying with push; the same maximum-field-count fixture measured 63.45 ms on Node v24.21.0. This entry records a confirmed, now-remediated issue, not an outstanding vulnerability.",
+    "root_cause": "decodeFields in packages/engine/src/sources/protobuf.ts at baseline 95dccdd does not append repeated values in place, allowing small valid upstream responses to trigger quadratic synchronous array copying.",
+    "intended_behavior": "Parse bounded remote AniCh metadata while keeping the shared local API and media engine responsive.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "packages/engine/src/sources/anich.ts",
+        "line": 154,
+        "scope": "search",
+        "description": "Reads the fixed AniCh source response through HttpClient.bytes with the source's URL and signal restrictions."
+      },
+      {
+        "kind": "propagation",
+        "file": "packages/engine/src/sources/anich.ts",
+        "line": 158,
+        "scope": "search",
+        "description": "Passes response bytes to decodeAniPage."
+      },
+      {
+        "kind": "propagation",
+        "file": "packages/engine/src/sources/anich.ts",
+        "line": 75,
+        "scope": "decodeAniPage",
+        "description": "decodeAniCards invokes protoItems/decodeFields; line 77 also decodes the envelope for its cursor."
+      },
+      {
+        "kind": "sink",
+        "file": "docs/audit-2026-09-25/protobuf-before.txt",
+        "line": 37,
+        "scope": "decodeFields",
+        "description": "Immutable source snapshot from baseline 95dccdd copies the prior array on every repeated field. The live source now appends in place at packages/engine/src/sources/protobuf.ts:37–39."
+      }
+    ],
+    "conditions": [
+      {
+        "kind": "third_party_dependency",
+        "description": "A configured AniCh upstream response is controlled or compromised; arbitrary unrelated websites cannot select a replacement host."
+      },
+      {
+        "kind": "user_interaction",
+        "description": "AniCh is enabled and the user requests search or catalog data that actually fetches the upstream response (a cache miss or explicit refresh)."
+      },
+      {
+        "kind": "system_configuration",
+        "description": "The baseline parser runs synchronously in the same Node process as the API and media gateway."
+      }
+    ],
+    "execution": {
+      "attacker_perspective": "An actor able to change metadata returned by the configured AniCh upstream, or an equivalent malformed upstream fixture.",
+      "payloads": [
+        "A legal 200000-byte Protobuf buffer containing 100000 empty repeated field-1 records; the isolated regression fixture is in tests/parsers.test.ts."
+      ],
+      "instructions": [
+        "Use an isolated in-memory fixture; do not contact a live source.",
+        "Feed the bounded response to decodeAniPage or AniChSource.search through a fake HttpClient.",
+        "Measure parser duration and a previously scheduled zero-delay timer."
+      ],
+      "expected_result": "On the baseline, synchronous parsing delays the event loop and unrelated local requests; on the fixed tree the same fixture parses in tens of milliseconds on the measured machine."
+    },
+    "remediation": {
+      "strategy": "Applied: append to the existing field array, preserving the 100000-field guard and malformed-input checks. Keep the maximum-field regression test.",
+      "code_changes": [
+        {
+          "file_name": "packages/engine/src/sources/protobuf.ts",
+          "fixed_code": "const values = out.get(field);\nif (values) values.push(value);\nelse out.set(field, [value]);"
+        }
+      ]
+    },
+    "severity": {
+      "likelihood": {
+        "score": "low",
+        "reason": "Requires control of a fixed remote source and a user request; no arbitrary-site entry was established."
+      },
+      "impact": {
+        "score": "medium",
+        "reason": "One small metadata response can temporarily stall the local API and media engine, without data disclosure or persistent modification."
+      },
+      "overall_severity": "medium"
+    },
+    "confidence": {
+      "score": "high",
+      "reason": "Independent source tracing and local dynamic measurements confirmed the pre-fix behavior; the current patch and parser regression cover the same bounded input."
+    }
+  }
+]

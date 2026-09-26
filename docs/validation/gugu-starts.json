@@ -1,0 +1,202 @@
+{
+  "startedAt": "2026-09-23T10:55:37.209Z",
+  "checkedAt": "2026-09-23T11:01:03.895Z",
+  "browser": "153.0.8010.53",
+  "mode": "start-seek-resume",
+  "results": [
+    {
+      "sourceId": "gugu",
+      "animeId": "5073",
+      "title": "不虐待我的继母与继姐",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5073",
+        "lineId": "yunjie",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 6746,
+      "duration": 1420.043625,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.007967,
+      "resumedPosition": 91.027559,
+      "resumeError": 0.01959200000000294
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "5073",
+      "title": "不虐待我的继母与继姐",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5073",
+        "lineId": "yunjie",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 9798,
+      "duration": 1420.043625,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.017653,
+      "resumedPosition": 91.034799,
+      "resumeError": 0.017146000000010986
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "5053",
+      "title": "再见菈菈",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5053",
+        "lineId": "yunjie",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 5866,
+      "duration": 1444.964833,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.019196,
+      "resumedPosition": 91.032882,
+      "resumeError": 0.01368600000000697
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "5053",
+      "title": "再见菈菈",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5053",
+        "lineId": "yunjie",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 6640,
+      "duration": 1440.125,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "seek": 90,
+      "savedPosition": 91.004963,
+      "resumedPosition": 91.020402,
+      "resumeError": 0.015439000000000647
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "5029",
+      "title": "令和的斑小姐",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5029",
+        "lineId": "yunjie",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 11912,
+      "duration": 1420.132,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.013841,
+      "resumedPosition": 91.02495,
+      "resumeError": 0.011109000000004698
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "5029",
+      "title": "令和的斑小姐",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5029",
+        "lineId": "yunjie",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 10570,
+      "duration": 1420.063,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.006526,
+      "resumedPosition": 91.02008,
+      "resumeError": 0.013553999999999178
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "5020",
+      "title": "THE WORLD IS DANCING 世界在起舞",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5020",
+        "lineId": "yunjie",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 21627,
+      "duration": 1421.421,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.007192,
+      "resumedPosition": 91.025154,
+      "resumeError": 0.017961999999997147
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "5020",
+      "title": "THE WORLD IS DANCING 世界在起舞",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "5020",
+        "lineId": "yunjie",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 11301,
+      "duration": 1420.419,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "seek": 90,
+      "savedPosition": 91.010959,
+      "resumedPosition": 91.021672,
+      "resumeError": 0.010712999999995532
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "4762",
+      "title": "元祖！BanG Dream Chan",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "4762",
+        "lineId": "yunjie",
+        "episodeId": "1"
+      },
+      "ok": false,
+      "error": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+    },
+    {
+      "sourceId": "gugu",
+      "animeId": "4762",
+      "title": "元祖！BanG Dream Chan",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "4762",
+        "lineId": "yunjie",
+        "episodeId": "2"
+      },
+      "ok": false,
+      "error": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+    }
+  ]
+}

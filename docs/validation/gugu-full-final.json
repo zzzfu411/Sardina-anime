@@ -1,0 +1,33 @@
+{
+  "startedAt": "2026-09-23T11:08:42.919Z",
+  "checkedAt": "2026-09-23T11:32:49.190Z",
+  "browser": "153.0.8010.53",
+  "mode": "continuous-playback-at-1x",
+  "results": [
+    {
+      "sourceId": "gugu",
+      "animeId": "4896",
+      "title": "葬送的芙莉莲 第二季",
+      "locator": {
+        "sourceId": "gugu",
+        "animeId": "4896",
+        "lineId": "yunjie",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 4965,
+      "duration": 1440.079,
+      "width": 1920,
+      "height": 1080,
+      "frames": 53,
+      "last": {
+        "time": 1440.079,
+        "ended": true,
+        "paused": true,
+        "frames": 34526,
+        "dropped": 0
+      },
+      "elapsedSeconds": 1446
+    }
+  ]
+}

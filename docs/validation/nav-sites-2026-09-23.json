@@ -1,0 +1,98 @@
+{
+  "checkedAt": "2026-09-23T07:42:53.844Z",
+  "scope": "萌鸢阁「在线动漫」截图中的站点。只记录公开页面结构与播放地址形态，不含整集验收。",
+  "navigation": "https://www.moeyg.cn/",
+  "wired": ["girigiri", "erkuang"],
+  "sites": [
+    {
+      "name": "次元城动画",
+      "url": "https://www.cycani.org/",
+      "result": "403，页面标题为不提供服务"
+    },
+    {
+      "name": "橘子动漫",
+      "url": "https://www.mgnacg.com/",
+      "result": "MacCMS。详情 /media/{id}/，播放 /bangumi/{id}-{线路}-{集}/。player_aaaa.encrypt=2，按标准 base64 解开后不是 http 地址"
+    },
+    {
+      "name": "girigiri爱动漫",
+      "url": "https://ani.girigirilove.com/",
+      "result": "已接入。引擎使用镜像 ani.yeuxark.com"
+    },
+    {
+      "name": "月之祠",
+      "url": "https://www.moonci.com/",
+      "result": "详情 /anime/{id}.html，播放 /anime/{id}/play/{线路}-{集}.html。X.1 解开后是 apn.moedot.net 上的 mp4，302 到 bjdownload.pan.wo.cn:30443，Range 请求返回 400。引擎不允许 30443 端口"
+    },
+    {
+      "name": "TvTFun",
+      "url": "https://www.tvtfun.net/",
+      "result": "Next.js。条目标 /video/{id}，播放页 /video/{id}/play。HTML 里没有播放地址"
+    },
+    {
+      "name": "柒番",
+      "url": "https://qifun.cc/",
+      "result": "域名停放，脚本跳到 https://router.parklogic.com/"
+    },
+    {
+      "name": "二矿动漫",
+      "url": "https://www.2rk.cc/",
+      "result": "已接入，见 erkuang-probe.json。搜索、目录 177 部 / 18 页、详情选集，以及同站 m3u8 清单抽测通过。未做整集播放"
+    },
+    {
+      "name": "番薯动漫",
+      "url": "https://www.fsdm02.com/",
+      "result": "Cloudflare Just a moment"
+    },
+    {
+      "name": "佩可爱动漫",
+      "url": "https://acg.pekolove.net/",
+      "result": "Security Check，没有目录"
+    },
+    {
+      "name": "喵物次元",
+      "url": "https://www.mwcy.net/",
+      "result": "跳到 https://1.oxfun.app/ 客户端下载页，没有网页播放"
+    },
+    {
+      "name": "MuteFun动漫",
+      "url": "https://www.2kdm.com/",
+      "result": "MacCMS。详情 /voddetail/{id}.html，播放 /vodplay/{id}-{线路}-{集}.html。encrypt=3，url 以 mute- 开头，不是直链"
+    },
+    {
+      "name": "Animoe动漫",
+      "url": "https://animoe.org/",
+      "result": "MacCMS。详情 /info/{id}.html，播放 /play/{id}-{线路}-{集}.html。encrypt=0 的地址在 animoe.org，响应 Content-Type 是 mpegurl，正文以 enc! 开头。解码逻辑在混淆的 /static/js/player.js"
+    },
+    {
+      "name": "嗷呜动漫",
+      "url": "https://www.aowu.tv/",
+      "result": "域名暂停服务"
+    },
+    {
+      "name": "稀饭动漫",
+      "url": "https://xifan.moe/",
+      "result": "xifan.moe 是入口。播放站 next.xifanacg.com 的公开详情不含直链，地址由 issue-android-playback 现签"
+    },
+    {
+      "name": "アニメ新番組",
+      "url": "https://bangumi.online/",
+      "result": "未登录会到登录页，并带有 Turnstile"
+    },
+    {
+      "name": "动画疯",
+      "url": "https://ani.gamer.com.tw/",
+      "result": "巴哈姆特正版，地区限制。未接"
+    },
+    {
+      "name": "AcFun番剧",
+      "url": "https://www.acfun.cn/",
+      "result": "付费番剧。未接"
+    },
+    {
+      "name": "哔哩哔哩动画",
+      "url": "https://www.bilibili.com/",
+      "result": "正版，播放需要登录签名。未接"
+    }
+  ]
+}

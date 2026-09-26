@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-09-22T17:54:17.773Z",
+  "scope": "Homepage structure only; not playback acceptance",
+  "navigation": "https://www.moeyg.cn/",
+  "results": [
+    {
+      "name": "番薯动漫",
+      "url": "https://www.fsdm02.com/",
+      "error": "来源限制了访问（403），请稍后重试"
+    },
+    {
+      "name": "次元城",
+      "url": "https://www.cycani.org/",
+      "error": "来源限制了访问（403），请稍后重试"
+    },
+    {
+      "name": "橘子动漫",
+      "url": "https://www.mgnacg.com/",
+      "finalHost": "www.mgnacg.com",
+      "title": "",
+      "size": 19903,
+      "cards": 0,
+      "iframes": 0
+    },
+    {
+      "name": "佩可爱",
+      "url": "https://acg.pekolove.net/",
+      "finalHost": "acg.pekolove.net",
+      "title": "Security Check",
+      "size": 1074,
+      "cards": 0,
+      "iframes": 0
+    },
+    {
+      "name": "Animoe",
+      "url": "https://animoe.org/",
+      "finalHost": "animoe.org",
+      "title": "Animoe动漫",
+      "size": 52587,
+      "cards": 0,
+      "iframes": 0
+    },
+    {
+      "name": "二矿",
+      "url": "https://www.2rk.cc/",
+      "finalHost": "www.2rk.cc",
+      "title": "超高清画质的动漫网站 - 二矿动漫",
+      "size": 9572,
+      "cards": 21,
+      "iframes": 0
+    },
+    {
+      "name": "TvTFun",
+      "url": "https://www.tvtfun.net/",
+      "error": "来源需要浏览器验证，当前线路暂不支持"
+    },
+    {
+      "name": "MuteFun",
+      "url": "https://www.2kdm.com/",
+      "finalHost": "www.2kdm.com",
+      "title": "MuteFun动漫网站-无声乐趣-(゜-゜)つロ 干杯~",
+      "size": 138259,
+      "cards": 241,
+      "iframes": 0
+    },
+    {
+      "name": "稀饭",
+      "url": "https://xifan.moe/",
+      "finalHost": "xifan.moe",
+      "title": "稀饭ACG - 连接动漫、漫画、游戏与二次元世界",
+      "size": 18146,
+      "cards": 0,
+      "iframes": 0
+    },
+    {
+      "name": "月之祠",
+      "url": "https://www.moonci.com/",
+      "finalHost": "www.moonci.com",
+      "title": "月之祠 - 二次元爱好者的纯净追番圣地",
+      "size": 77054,
+      "cards": 174,
+      "iframes": 0
+    },
+    {
+      "name": "柒番",
+      "url": "https://qifun.cc/",
+      "error": "unable to get local issuer certificate"
+    },
+    {
+      "name": "喵物次元",
+      "url": "https://www.mwcy.net/",
+      "finalHost": "1.oxfun.app",
+      "title": "牛番 OXFUN 官方客户端下载｜Android、iOS、Windows",
+      "size": 57602,
+      "cards": 0,
+      "iframes": 0
+    }
+  ]
+}

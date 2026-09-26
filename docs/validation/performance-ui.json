@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-23T12:22:31.347830+00:00",
+  "selection": {
+    "home": "girigiri",
+    "schedule": "girigiri"
+  },
+  "requests": [
+    {
+      "path": "/api/v1/schedule",
+      "source": "girigiri",
+      "ms": 746
+    },
+    {
+      "path": "/api/v1/home",
+      "source": "girigiri",
+      "ms": 746
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  }
+}

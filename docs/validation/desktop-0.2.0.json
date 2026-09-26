@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "checkedAt": "2026-09-22T17:45:19.315Z",
+  "platform": "darwin",
+  "arch": "arm64",
+  "systemNodeOnPath": false,
+  "testedDiskImage": true,
+  "title": "映序 · Revanime",
+  "preferences": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false
+  },
+  "engine": {
+    "app": "revanime",
+    "version": "0.2.0",
+    "pid": 14740,
+    "releaseStatus": "development-preview"
+  },
+  "repeatLaunchUsesSameEngine": true,
+  "browserModeAttaches": true,
+  "catalogNavigation": true,
+  "weekdayNavigation": true,
+  "searchLanding": true,
+  "resumeEventReloads": true,
+  "ok": true
+}

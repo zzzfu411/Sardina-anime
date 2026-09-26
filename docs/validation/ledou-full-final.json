@@ -1,0 +1,33 @@
+{
+  "startedAt": "2026-09-23T11:08:44.506Z",
+  "checkedAt": "2026-09-23T11:32:50.966Z",
+  "browser": "153.0.8010.53",
+  "mode": "continuous-playback-at-1x",
+  "results": [
+    {
+      "sourceId": "ledou",
+      "animeId": "44167",
+      "title": "狼与香辛料 第二季",
+      "locator": {
+        "sourceId": "ledou",
+        "animeId": "44167",
+        "lineId": "main",
+        "episodeId": "4270231"
+      },
+      "ok": true,
+      "startMs": 5281,
+      "duration": 1430.7222220000028,
+      "width": 1920,
+      "height": 1080,
+      "frames": 50,
+      "last": {
+        "time": 1431.163166,
+        "ended": true,
+        "paused": true,
+        "frames": 34303,
+        "dropped": 0
+      },
+      "elapsedSeconds": 1446
+    }
+  ]
+}

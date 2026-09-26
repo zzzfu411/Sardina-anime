@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-09-25T11:36:30.220Z",
+  "node": "v24.21.0",
+  "fixtureOnly": true,
+  "fields": 100000,
+  "bytes": 200000,
+  "elapsedMs": 63.45,
+  "items": 0,
+  "beforeFixObservedByIndependentReviewerMs": 16007.96
+}

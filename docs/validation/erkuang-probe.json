@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-09-23T07:42:53.844Z",
+  "stages": [
+    {
+      "name": "home",
+      "value": [
+        {
+          "title": "最近更新",
+          "items": 4
+        },
+        {
+          "title": "正在热映",
+          "items": 5
+        }
+      ]
+    },
+    {
+      "name": "search",
+      "value": {
+        "items": 1,
+        "title": "葬送的芙莉莲",
+        "hasMore": false,
+        "total": 1
+      }
+    },
+    {
+      "name": "catalog",
+      "value": {
+        "items": 10,
+        "hasMore": true,
+        "total": 177,
+        "pageCount": 18
+      }
+    },
+    {
+      "name": "detail",
+      "value": {
+        "id": "00zangsongdefulilian",
+        "title": "葬送的芙莉莲",
+        "episodes": 28,
+        "year": 2023
+      }
+    },
+    {
+      "name": "media",
+      "value": {
+        "episode": "1",
+        "format": "hls",
+        "host": "www.2rk.cc",
+        "status": 206,
+        "playlist": true,
+        "segments": 34,
+        "segHost": "www.2rk.cc"
+      }
+    },
+    {
+      "name": "media",
+      "value": {
+        "episode": "28",
+        "format": "hls",
+        "host": "www.2rk.cc",
+        "status": 206,
+        "playlist": true,
+        "segments": 34,
+        "segHost": "www.2rk.cc"
+      }
+    }
+  ]
+}

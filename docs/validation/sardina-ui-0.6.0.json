@@ -1,0 +1,272 @@
+{
+  "version": "0.6.0",
+  "checkedAt": "2026-09-24T07:33:03.648Z",
+  "environment": "Chrome controlled fixtures",
+  "beforeCaptcha": {
+    "results": 0,
+    "requests": [
+      {
+        "source": "girigiri",
+        "keyword": "星空",
+        "pages": {}
+      }
+    ]
+  },
+  "switch": {
+    "source": "fixture",
+    "oldCaptchaGone": true,
+    "oldImageStatus": 410
+  },
+  "pagination": {
+    "cards": 2,
+    "lastRequest": {
+      "source": "girigiri",
+      "keyword": "星空",
+      "pages": {
+        "girigiri": 2
+      }
+    },
+    "verificationPrompts": 0,
+    "onlySyntheticCaptchaSubmitted": true
+  },
+  "rapidSwitch": {
+    "oldRequestAborted": true,
+    "staleCards": 0
+  },
+  "invalidSource": {
+    "noFallbackRequest": true
+  },
+  "searchRequests": [
+    {
+      "source": "girigiri",
+      "keyword": "星空",
+      "pages": {}
+    },
+    {
+      "source": "fixture",
+      "keyword": "星空",
+      "pages": {}
+    },
+    {
+      "source": "girigiri",
+      "keyword": "星空",
+      "pages": {}
+    },
+    {
+      "source": "girigiri",
+      "keyword": "星空",
+      "pages": {
+        "girigiri": 2
+      }
+    },
+    {
+      "source": "offline",
+      "keyword": "late",
+      "pages": {}
+    },
+    {
+      "source": "fixture",
+      "keyword": "late",
+      "pages": {}
+    }
+  ],
+  "layouts": [
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "light",
+      "path": "/search?q=星空&source=fixture",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "light",
+      "path": "/search?q=星空&source=fixture",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "light",
+      "path": "/search?q=星空&source=fixture",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "light",
+      "path": "/",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/search?q=星空&source=fixture",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/catalog",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/settings",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/search?q=星空&source=fixture",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "dark",
+      "path": "/search?q=星空&source=fixture",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/search?q=星空&source=fixture",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/search?q=星空&source=fixture",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/catalog",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/settings",
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  ],
+  "captcha320": {
+    "width": 320,
+    "scrollWidth": 320
+  },
+  "errors": []
+}

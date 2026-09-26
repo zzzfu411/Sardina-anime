@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-09-22T08:51:34.486Z",
+  "results": [
+    {
+      "sourceId": "anich",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38493",
+        "lineId": "auto",
+        "episodeId": "78"
+      },
+      "lineNames": [
+        "自动选择"
+      ],
+      "format": "mp4",
+      "status": 206,
+      "bytes": 1024,
+      "contentType": "video/mp4",
+      "ok": true
+    },
+    {
+      "sourceId": "aki",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "N3cDDE",
+        "lineId": "1",
+        "episodeId": "1"
+      },
+      "lineNames": [
+        "超高画三线"
+      ],
+      "format": "mp4",
+      "status": 206,
+      "bytes": 1024,
+      "contentType": "video/mp4",
+      "ok": true
+    }
+  ]
+}

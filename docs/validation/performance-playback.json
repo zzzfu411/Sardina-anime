@@ -1,0 +1,50 @@
+{
+  "startedAt": "2026-09-23T12:18:55.275Z",
+  "checkedAt": "2026-09-23T12:19:15.387Z",
+  "browser": "153.0.8010.53",
+  "mode": "start-seek-resume",
+  "results": [
+    {
+      "sourceId": "girigiri",
+      "animeId": "27100",
+      "title": "碧蓝之海 第三季",
+      "locator": {
+        "sourceId": "girigiri",
+        "animeId": "27100",
+        "lineId": "1",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 4248,
+      "duration": 1440.076114,
+      "width": 1920,
+      "height": 1080,
+      "frames": 49,
+      "seek": 90,
+      "savedPosition": 91.035769,
+      "resumedPosition": 91.058989,
+      "resumeError": 0.02321999999999491
+    },
+    {
+      "sourceId": "girigiri",
+      "animeId": "27100",
+      "title": "碧蓝之海 第三季",
+      "locator": {
+        "sourceId": "girigiri",
+        "animeId": "27100",
+        "lineId": "1",
+        "episodeId": "2"
+      },
+      "ok": true,
+      "startMs": 3785,
+      "duration": 1440.0761189999994,
+      "width": 1920,
+      "height": 1080,
+      "frames": 50,
+      "seek": 90,
+      "savedPosition": 91.009977,
+      "resumedPosition": 91.031213,
+      "resumeError": 0.021235999999987598
+    }
+  ]
+}

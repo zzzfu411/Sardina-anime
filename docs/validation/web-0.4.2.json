@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-24T06:27:51.486758+00:00",
+  "version": "0.4.2",
+  "origin": "http://127.0.0.1:56986",
+  "usingExistingUserProfile": true,
+  "appearance": "light",
+  "preferredSource": "girigiri",
+  "preserved": {
+    "history": true,
+    "settings": true,
+    "sourceSettings": true,
+    "searchHistory": true,
+    "libraryIdentity": true
+  },
+  "ok": true,
+  "historyComparison": {
+    "beforeCount": 2,
+    "afterCount": 3,
+    "newRecordsDuringValidation": 1,
+    "comparison": "All pre-update history entries compared by stable key; new history entries retained."
+  }
+}

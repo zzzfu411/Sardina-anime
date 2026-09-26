@@ -1,0 +1,58 @@
+{
+  "startedAt": "2026-09-22T07:17:54.259Z",
+  "checkedAt": "2026-09-22T07:42:08.181Z",
+  "browser": "153.0.8010.53",
+  "mode": "continuous-playback-at-1x",
+  "results": [
+    {
+      "sourceId": "anich",
+      "animeId": "38493",
+      "title": "Re：从零开始的异世界生活 第四季 夺还篇",
+      "locator": {
+        "sourceId": "anich",
+        "animeId": "38493",
+        "lineId": "auto",
+        "episodeId": "78"
+      },
+      "ok": true,
+      "startMs": 3911,
+      "duration": 1420.023244,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "last": {
+        "time": 1420.023244,
+        "ended": true,
+        "paused": true,
+        "frames": 34046,
+        "dropped": 6
+      },
+      "elapsedSeconds": 1444
+    },
+    {
+      "sourceId": "aki",
+      "animeId": "N3cDDE",
+      "title": "超超超超超喜欢你的100个女朋友 第三季",
+      "locator": {
+        "sourceId": "aki",
+        "animeId": "N3cDDE",
+        "lineId": "1",
+        "episodeId": "1"
+      },
+      "ok": true,
+      "startMs": 10428,
+      "duration": 1430.033244,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "last": {
+        "time": 1430.033244,
+        "ended": true,
+        "paused": true,
+        "frames": 34286,
+        "dropped": 0
+      },
+      "elapsedSeconds": 1451
+    }
+  ]
+}

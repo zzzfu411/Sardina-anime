@@ -1,0 +1,41 @@
+{
+  "version": "0.4.2",
+  "checkedAt": "2026-09-24T06:21:53.080Z",
+  "controlledFixture": true,
+  "submitInitiallyDisabled": true,
+  "otherSourceResultsVisible": true,
+  "rejectsNonDigits": true,
+  "wrongCodeGetsNewPicture": true,
+  "clearsOldInput": true,
+  "focusReturnsToInput": true,
+  "oldImageInvalid": true,
+  "manualRefreshChangesPicture": true,
+  "layouts": [
+    {
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 375,
+      "overflow": false
+    }
+  ],
+  "correctCodeRestoresResults": true,
+  "correctCodeRemovesChallenge": true,
+  "paginationKeepsVerifiedSession": true,
+  "separateImagesForWindows": true,
+  "otherWindowStillWaiting": true,
+  "bothWindowsCanFinish": true,
+  "cancelRemovesForm": true,
+  "cancelInvalidatesImage": true,
+  "keywordChangeInvalidatesOldImage": true,
+  "keywordChangeGetsNewImage": true,
+  "darkTheme": true,
+  "expiredShowsRestart": true,
+  "expiryCanRestart": true,
+  "pageErrors": []
+}

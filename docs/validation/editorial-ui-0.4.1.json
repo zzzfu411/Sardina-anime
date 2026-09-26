@@ -1,0 +1,220 @@
+{
+  "version": "0.4.1",
+  "checkedAt": "2026-09-24T03:26:36.139362+00:00",
+  "defaultAppearance": "light",
+  "posterRatio": 0.6666666666666666,
+  "layouts": [
+    {
+      "path": "/",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/catalog",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/calendar",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/history",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/library",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/settings",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/anime/girigiri/27099",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/catalog",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/calendar",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/history",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/library",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/settings",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/anime/girigiri/27099",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "path": "/",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/catalog",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/calendar",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/history",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/library",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/settings",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/anime/girigiri/27099",
+      "width": 1024,
+      "scrollWidth": 1024
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/catalog",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/calendar",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/history",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/library",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/settings",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "path": "/anime/girigiri/27099",
+      "width": 1440,
+      "scrollWidth": 1440
+    }
+  ],
+  "darkPersists": true,
+  "finalCatalog": {
+    "decoded": [true, true, true, true, true, true],
+    "desktop": true,
+    "mobile": true,
+    "expanded": true
+  },
+  "colorContrast": [
+    {
+      "foreground": "#292b29",
+      "background": "#f7f5f0",
+      "ratio": 13.1
+    },
+    {
+      "foreground": "#676a63",
+      "background": "#f7f5f0",
+      "ratio": 5.05
+    },
+    {
+      "foreground": "#b6382c",
+      "background": "#f7f5f0",
+      "ratio": 5.37
+    },
+    {
+      "foreground": "#676a63",
+      "background": "#eeece5",
+      "ratio": 4.65
+    },
+    {
+      "foreground": "#eeeee4",
+      "background": "#20221f",
+      "ratio": 13.73
+    },
+    {
+      "foreground": "#b8bab0",
+      "background": "#20221f",
+      "ratio": 8.16
+    },
+    {
+      "foreground": "#efa08a",
+      "background": "#20221f",
+      "ratio": 7.68
+    }
+  ],
+  "typecheck": true,
+  "fixedSampleTests": {
+    "passed": 124,
+    "note": "122 passed in sandbox; the two local listener tests initially hit EPERM and passed with localhost permission."
+  },
+  "browserFlowsPassed": 12,
+  "visualReview": [
+    "home light and dark",
+    "complete portrait cover",
+    "home 375px",
+    "catalog desktop and mobile",
+    "detail desktop and mobile",
+    "settings mobile"
+  ],
+  "screenshots": [
+    "output/playwright/editorial-catalog-0.4.1.png",
+    "output/playwright/editorial-catalog-mobile-0.4.1.png",
+    "output/playwright/editorial-detail-0.4.1.png",
+    "output/playwright/editorial-detail-mobile-0.4.1.png",
+    "output/playwright/editorial-home-0.4.1.png",
+    "output/playwright/editorial-home-dark-0.4.1.png",
+    "output/playwright/editorial-home-mobile-0.4.1.png",
+    "output/playwright/editorial-settings-mobile-0.4.1.png"
+  ],
+  "limitations": [
+    "No new full-episode or Safari playback check for this visual revision.",
+    "Contrast covers listed pairs, not a complete accessibility audit."
+  ]
+}

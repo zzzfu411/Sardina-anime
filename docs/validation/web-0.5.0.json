@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-24T07:07:35.811430+00:00",
+  "version": "0.5.0",
+  "origin": "http://127.0.0.1:58862",
+  "usingExistingUserProfile": true,
+  "appearance": "light",
+  "preferredSource": "girigiri",
+  "preserved": {
+    "settings": true,
+    "sourceSettings": true,
+    "searchHistory": true,
+    "history": true,
+    "libraryIdentity": true
+  },
+  "historyComparison": {
+    "beforeCount": 3,
+    "afterCount": 3,
+    "comparison": "Existing history entries compared by stable key; new entries retained."
+  },
+  "ok": true
+}

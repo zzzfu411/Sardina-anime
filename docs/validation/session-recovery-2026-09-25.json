@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-09-24T17:43:37.088Z",
+  "origin": "http://127.0.0.1:64593",
+  "enabledSources": 7,
+  "historyCount": 3,
+  "libraryCount": 0,
+  "preserved": {
+    "history": true,
+    "library": true,
+    "settings": true,
+    "sourceSettings": true,
+    "searchHistory": true,
+    "bangumiLinks": true
+  },
+  "browserCookieMaxAgeDays": 30,
+  "chromePersistentProfileRestart": {
+    "initialBrowserPid": 28362,
+    "reopenedBrowserPid": 28469,
+    "reopenedWithPlainHomeUrl": true,
+    "sourcesApiStatus": 200,
+    "enabledSources": 7,
+    "selectedSource": "girigiri",
+    "sessionErrorCount": 0
+  },
+  "unitTestsPassed": 148,
+  "chromeE2ePassed": 15,
+  "screenshot": "output/playwright/session-restored-2026-09-25.png"
+}

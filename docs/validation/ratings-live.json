@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-09-24T08:49:27.517Z",
+  "records": [
+    {
+      "label": "girigiri-hot",
+      "ok": true,
+      "ms": 1559,
+      "result": {
+        "count": 48,
+        "titles": [
+          "死亡笔记",
+          "住在拔作岛上的我该如何是好？",
+          "吊带袜天使"
+        ]
+      }
+    },
+    {
+      "label": "girigiri-score",
+      "ok": true,
+      "ms": 1578,
+      "result": {
+        "count": 48,
+        "cards": [
+          {
+            "title": "野良神 第二季",
+            "remarks": "13集全"
+          },
+          {
+            "title": "摇曳露营△ 第二季",
+            "remarks": "已完结"
+          },
+          {
+            "title": "一个人的〇〇小日子",
+            "remarks": "已完结"
+          }
+        ]
+      }
+    },
+    {
+      "label": "girigiri-home",
+      "ok": true,
+      "ms": 1871,
+      "result": [
+        {
+          "title": "本周番剧",
+          "count": 30
+        },
+        {
+          "title": "最近大家在看",
+          "count": 10,
+          "description": "girigiri 首页推荐，来源未公开统计周期。"
+        }
+      ]
+    },
+    {
+      "label": "ledou-hot",
+      "ok": true,
+      "ms": 69,
+      "result": {
+        "count": 21,
+        "titles": [
+          "逃亡兔 第一季",
+          "逃亡兔 第二季",
+          "茶啊二中 第六季"
+        ]
+      }
+    },
+    {
+      "label": "girigiri-detail",
+      "ok": true,
+      "ms": 428,
+      "result": {
+        "title": "Re：从零开始的异世界生活 第四季 丧失篇&夺还篇",
+        "ratings": [
+          {
+            "label": "girigiri 展示分（番）",
+            "score": 7.1,
+            "origin": "source"
+          },
+          {
+            "label": "girigiri 站内",
+            "score": 3.8,
+            "origin": "source",
+            "total": 11228
+          }
+        ]
+      }
+    },
+    {
+      "label": "bangumi-official",
+      "ok": true,
+      "ms": 557,
+      "result": {
+        "id": "400602",
+        "title": "葬送的芙莉莲",
+        "score": 8.5,
+        "total": 36297,
+        "rank": 42
+      }
+    },
+    {
+      "label": "xifan-snapshot",
+      "ok": false,
+      "ms": 918,
+      "error": "来源限制了访问（401），请稍后重试"
+    },
+    {
+      "label": "akianime-hot",
+      "ok": true,
+      "ms": 6940,
+      "result": {
+        "count": 40,
+        "titles": [
+          "海贼王",
+          "名侦探柯南",
+          "火影忍者"
+        ]
+      }
+    },
+    {
+      "label": "gugu-hot",
+      "ok": true,
+      "ms": 1095,
+      "result": {
+        "count": 30,
+        "titles": [
+          "海贼王",
+          "拔作岛",
+          "碧蓝之海 第二季"
+        ]
+      }
+    }
+  ]
+}

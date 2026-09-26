@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-24T07:37:14.170Z",
+  "version": "0.6.0",
+  "diskImageVerified": true,
+  "packagedRoots": ["node_modules", "desktop", "engine", "package.json", "web"],
+  "nativeSqlitePresent": true,
+  "researchFilesIncluded": false,
+  "ocrImplementationIncluded": false,
+  "manualCaptchaApiIncluded": true,
+  "brandLogoIncluded": true,
+  "appTitleIncluded": true,
+  "singleSourceSearchIncluded": true,
+  "nightSkyIncluded": true,
+  "sha256": [
+    "55d2ca317f4ef581ddbf6ae89197ade9d467151cb8bc11690956005175aa1bb8  Sardina-anime-0.6.0-arm64.dmg",
+    "8766f0c71d81f014dd5c68f1e1a78ad4752aa0eb90bbcaa9fc4873d65da98dc4  Sardina-anime-0.6.0-arm64.zip"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-09-24T18:53:22.979Z",
+  "behavior": {
+    "seekStepSeconds": 5,
+    "rightHoldThresholdMs": 350,
+    "temporaryRate": 2,
+    "restorePreviousRate": true,
+    "persistTemporaryRate": false,
+    "showBoostOverlay": false
+  },
+  "checks": {
+    "typecheck": "passed",
+    "build": "passed",
+    "chromeE2E": {
+      "startTime": "2026-09-24T18:51:00.745Z",
+      "duration": 23571.041,
+      "expected": 18,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "verifiedScenarios": [
+    "Focused native video controls seek exactly five seconds per tap, without an extra native seek.",
+    "Seek positions are clamped to the beginning and end; repeated left keydown does not multiply one press.",
+    "Fullscreen right hold uses 2x and right auto-repeat adds no seek.",
+    "Release restores a selected 1.5x speed without an extra seek.",
+    "Changing volume while holding preserves temporary 2x and the stored 1.5x setting.",
+    "Blur, pause and input focus cancel the boost or pending timer.",
+    "Text-input arrows do not control the player.",
+    "The next HLS episode and persisted setting retain the selected 1.25x speed."
+  ],
+  "liveBuild": {
+    "checkedAt": "2026-09-24T18:51:40.148Z",
+    "origin": "http://127.0.0.1:51908",
+    "htmlMatchesBuild": true,
+    "playerAsset": "watch-u5AH4jj3.js",
+    "playerSha256": "f3827bbd450bd57a0e88a4f2a37c9aebcb35204e5c379d7103ae9f261605cae9",
+    "servedPlayerMatchesBuild": true,
+    "boostOverlay": false
+  },
+  "screenshot": "output/playwright/player-keyboard-clean.png",
+  "testCorrection": "An initial assertion targeted the discarded video element after teardown; browser load() resets that element to its default rate. The test now checks the new episode and stored playback speed, which are the user-visible contract.",
+  "limits": [
+    "Checks used controlled MP4 and HLS fixtures in Chrome; Safari was not rerun.",
+    "The existing macOS installer was not rebuilt."
+  ]
+}

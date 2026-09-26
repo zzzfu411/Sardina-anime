@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-09-23T10:47:00.207Z",
+  "rows": [
+    {
+      "id": "jinpai",
+      "stage": "play-options",
+      "variants": [
+        {
+          "resolution": 1080,
+          "needLogin": true,
+          "flag": false,
+          "hasUrl": true
+        },
+        {
+          "resolution": 720,
+          "needLogin": true,
+          "flag": false,
+          "hasUrl": true
+        },
+        {
+          "resolution": 480,
+          "needLogin": false,
+          "flag": true,
+          "hasUrl": true
+        }
+      ]
+    },
+    {
+      "id": "yzx",
+      "stage": "resolve",
+      "code": 0,
+      "message": "",
+      "fields": [
+        "code",
+        "url",
+        "noMore",
+        "y",
+        "playType",
+        "duo",
+        "urlarr",
+        "xiazaicishu",
+        "toupingcishu",
+        "yujiazai",
+        "piantou",
+        "pianwei",
+        "version",
+        "loadingTimeOut",
+        "retryMax"
+      ]
+    },
+    {
+      "id": "jinpai",
+      "stage": "media",
+      "host": "ppvod01.kqgfbs.com",
+      "status": 403,
+      "type": "application/vnd.apple.mpegurl",
+      "hls": false
+    },
+    {
+      "id": "yzx",
+      "stage": "media",
+      "host": "po.znbvvd.top",
+      "status": 206,
+      "type": "application/vnd.apple.mpegurl",
+      "hls": true
+    },
+    {
+      "id": "gugu",
+      "stage": "resolve",
+      "line": "咕咕新线(国内高速)",
+      "code": 1,
+      "keys": [
+        "json"
+      ],
+      "format": "other"
+    },
+    {
+      "id": "gugu-0",
+      "stage": "media",
+      "host": "p26-bot-workflow-sign.byteimg.com",
+      "status": 206,
+      "type": "video/mp4",
+      "hls": false
+    },
+    {
+      "id": "gugu",
+      "stage": "resolve",
+      "line": "咕咕A线",
+      "code": 1,
+      "keys": [
+        "json"
+      ],
+      "format": "other"
+    }
+  ]
+}

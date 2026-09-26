@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-09-24T06:27:57.156565+00:00",
+  "sourceId": "girigiri",
+  "keyword": "葬送",
+  "automatedCodeSubmissions": 0,
+  "searchMs": 879,
+  "events": ["source", "challenge", "done"],
+  "image": {
+    "contentType": "image/png",
+    "bytes": 462,
+    "cacheControl": "no-store",
+    "pngSignature": true
+  },
+  "ok": true
+}

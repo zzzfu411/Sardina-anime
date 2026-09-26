@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-09-23T11:52:04.563Z",
+  "keyword": "葬送",
+  "events": [
+    {
+      "type": "source",
+      "sourceId": "anich",
+      "ms": 6
+    },
+    {
+      "type": "source",
+      "sourceId": "aki",
+      "ms": 6
+    },
+    {
+      "type": "source",
+      "sourceId": "girigiri",
+      "ms": 6
+    },
+    {
+      "type": "error",
+      "sourceId": "girigiri",
+      "ms": 1231,
+      "code": "ACCESS_REQUIRED",
+      "message": "girigiri 站内搜索需要验证码，请通过番剧索引或每周放送查找。"
+    },
+    {
+      "type": "source",
+      "sourceId": "erkuang",
+      "ms": 1231
+    },
+    {
+      "type": "result",
+      "sourceId": "anich",
+      "ms": 1415,
+      "count": 3,
+      "hasMore": false
+    },
+    {
+      "type": "source",
+      "sourceId": "gugu",
+      "ms": 1415
+    },
+    {
+      "type": "result",
+      "sourceId": "erkuang",
+      "ms": 2533,
+      "count": 1,
+      "hasMore": false
+    },
+    {
+      "type": "source",
+      "sourceId": "ledou",
+      "ms": 2533
+    },
+    {
+      "type": "result",
+      "sourceId": "gugu",
+      "ms": 2935,
+      "count": 2,
+      "hasMore": false
+    },
+    {
+      "type": "source",
+      "sourceId": "xifan",
+      "ms": 2935
+    },
+    {
+      "type": "result",
+      "sourceId": "ledou",
+      "ms": 2945,
+      "count": 3,
+      "hasMore": false
+    },
+    {
+      "type": "result",
+      "sourceId": "xifan",
+      "ms": 4218,
+      "count": 4,
+      "hasMore": false
+    },
+    {
+      "type": "result",
+      "sourceId": "aki",
+      "ms": 5800,
+      "count": 2,
+      "hasMore": false
+    },
+    {
+      "type": "done",
+      "ms": 5800
+    }
+  ]
+}

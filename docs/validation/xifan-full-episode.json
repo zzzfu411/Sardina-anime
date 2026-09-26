@@ -1,0 +1,48 @@
+{
+  "startedAt": "2026-09-23T11:29:49.441Z",
+  "checkedAt": "2026-09-23T11:44:25.773Z",
+  "browser": "153.0.8010.53",
+  "mode": "continuous-playback-at-1x",
+  "results": [
+    {
+      "sourceId": "xifan",
+      "animeId": "3403",
+      "title": "无职转生 第三季 ～到了异世界就拿出真本事～",
+      "locator": {
+        "sourceId": "xifan",
+        "animeId": "3403",
+        "lineId": "4",
+        "episodeId": "121397"
+      },
+      "ok": false,
+      "startMs": 8171,
+      "duration": 1420.062993,
+      "width": 1920,
+      "height": 1080,
+      "frames": 52,
+      "last": {
+        "time": 568.490942,
+        "ended": false,
+        "paused": true,
+        "error": 3,
+        "frames": 13638,
+        "dropped": 101
+      },
+      "elapsedSeconds": 875,
+      "playerMessage": [
+        "这一线路暂时无法播放来源暂时无法连接，请稍后重试重新尝试也可以在右侧切换线路或查找其他来源"
+      ],
+      "networkErrors": [
+        {
+          "status": 502,
+          "path": "/api/v1/images/cc11f3ccecf828f73d98fa12ea0e47d247fc0a364be9b934af2d84f1450a3d91"
+        },
+        {
+          "status": 500,
+          "path": "/api/v1/playbacks/0b077df4-265d-4bc4-bb56-e3dceca54713/refresh"
+        }
+      ],
+      "error": "Error: Playback made no progress for 120 seconds"
+    }
+  ]
+}

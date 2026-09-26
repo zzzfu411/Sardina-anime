@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-23T11:18:32.637Z",
+  "rows": [
+    {
+      "id": 4,
+      "ok": true,
+      "status": 206,
+      "host": "bjdownload.pan.wo.cn:30443",
+      "type": "video/mp4"
+    },
+    {
+      "id": 1,
+      "error": "来源地址不符合访问规则"
+    },
+    {
+      "id": 2,
+      "ok": true,
+      "status": 206,
+      "host": "dl.playxf.top",
+      "type": "binary/octet-stream"
+    }
+  ]
+}
