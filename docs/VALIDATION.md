@@ -9,6 +9,7 @@
 - 安装版和 ZIP 版均实际解码仓库原创 MP4/HLS 视频，得到 480×270 视频帧并持续推进播放时间；未以这些短样本代替真实来源整集验收。
 - 类型检查和本机 322 项测试通过；一项文件符号链接测试因本机普通账户权限不足明确跳过。目录链接改用 Windows junction，其他备份校验仍完整执行；GitHub Actions 在 CI 环境禁止此权限跳过，另行执行全部 323 项测试。
 - [安装版](validation/desktop-0.7.2-windows-installed.json)、[ZIP 版](validation/desktop-0.7.2-windows-zip.json)、[安装/卸载摘要](validation/windows-release-0.7.2.json)。归档记录对应本机验收构建；Release 由 GitHub Actions 重新构建并验收，SHA-256 以 Release 附件为准。
+- 云端全量测试发现 Windows 不支持原有 O_NOFOLLOW 文件打开标志；读取备份时补充 lstat、真实路径及文件描述符身份校验，在读取内容前明确拒绝符号链接。
 - 尚未逐一测试 Windows 10、ARM64、真实系统休眠、跨机器迁移或 Windows 上的来源整集播放。
 
 ## v0.7.2：macOS 安装包首发（2026-09-26）

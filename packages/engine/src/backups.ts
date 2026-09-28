@@ -151,9 +151,14 @@ export class BackupFiles {
     if (!filenamePattern.test(name)) throw new AppError('INVALID_BACKUP_PATH', '自动备份文件名无效', 400);
     const dir = this.directoryPath();
     if (!dir) throw new AppError('NOT_FOUND', '自动备份不存在', 404);
+    const path = join(dir, name);
     let fd: number;
     try {
-      fd = openSync(join(dir, name), constants.O_RDONLY | constants.O_NOFOLLOW | constants.O_NONBLOCK);
+      // O_NOFOLLOW is unavailable on Windows, so reject links explicitly as well.
+      const entry = lstatSync(path);
+      if (!entry.isFile() || entry.isSymbolicLink())
+        throw new AppError('INVALID_BACKUP_PATH', '备份必须是常规文件', 400);
+      fd = openSync(path, constants.O_RDONLY | (constants.O_NOFOLLOW ?? 0) | (constants.O_NONBLOCK ?? 0));
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code === 'ENOENT')
         throw new AppError('NOT_FOUND', '自动备份不存在', 404);
@@ -161,7 +166,17 @@ export class BackupFiles {
     }
     try {
       const stat = fstatSync(fd);
-      if (!stat.isFile()) throw new AppError('INVALID_BACKUP_PATH', '备份必须是常规文件', 400);
+      const entry = lstatSync(path);
+      // Check the opened descriptor against the path again before reading any bytes.
+      if (
+        !stat.isFile() ||
+        !entry.isFile() ||
+        entry.isSymbolicLink() ||
+        stat.dev !== entry.dev ||
+        stat.ino !== entry.ino ||
+        realpathSync(path) !== path
+      )
+        throw new AppError('INVALID_BACKUP_PATH', '备份必须是资料目录内的常规文件', 400);
       if (stat.size > BACKUP_MAX_BYTES)
         throw new AppError('BACKUP_TOO_LARGE', '备份超过 64 MB，无法在本机恢复', 413);
       const buffer = Buffer.alloc(Math.min(stat.size + 1, BACKUP_MAX_BYTES + 1));
