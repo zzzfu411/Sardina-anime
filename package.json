@@ -19,7 +19,9 @@
     "test:e2e": "playwright test",
     "check": "pnpm typecheck && pnpm test && pnpm build",
     "probe": "node --import tsx scripts/probe.ts",
-    "package:mac": "node --import tsx scripts/package.ts"
+    "package:mac": "node --import tsx scripts/package.ts --mac",
+    "package:win": "node --import tsx scripts/package.ts --win",
+    "verify:desktop": "node --import tsx scripts/verify-desktop.ts"
   },
   "dependencies": {
     "@fastify/static": "^8.3.0",

@@ -83,7 +83,7 @@ describe('automatic backup recovery', () => {
     expect(first.backupName).not.toBe(second.backupName);
     expect(readdirSync(store.backups.directory!)).toHaveLength(2);
   });
-  it('rejects traversal, malformed files, oversized files, and file symlinks without changing the profile', () => {
+  it('rejects traversal, malformed files, and oversized files without changing the profile', () => {
     const store = open();
     store.addLibrary(card, 'watching');
     const initial = store.export();
@@ -92,7 +92,6 @@ describe('automatic backup recovery', () => {
     const external = join(directory(), 'external.json');
     writeFileSync(external, JSON.stringify(initial));
     writeFileSync(join(dir, 'before-restore-1.json'), '{bad json');
-    symlinkSync(external, join(dir, 'before-restore-2.json'));
     mkdirSync(join(dir, 'before-restore-3.json'));
     const huge = openSync(join(dir, 'before-restore-4.json'), 'w');
     ftruncateSync(huge, BACKUP_MAX_BYTES + 1);
@@ -101,22 +100,46 @@ describe('automatic backup recovery', () => {
       '../external.json',
       '/tmp/external.json',
       'before-restore-1.json',
-      'before-restore-2.json',
       'before-restore-3.json',
       'before-restore-4.json',
     ])
       expect(() => store.backups.read(name)).toThrow();
-    expect(store.backups.list().items.some((item) => item.name === 'before-restore-2.json')).toBe(false);
     expect(store.backups.list().items.find((item) => item.name === 'before-restore-1.json')).toMatchObject({
       valid: false,
     });
     expect(store.library()[0].status).toBe('watching');
     expect(JSON.parse(readFileSync(external, 'utf8'))).toEqual(initial);
   });
+  it('rejects file symlinks without changing the profile or linked file', ({ skip }) => {
+    const store = open();
+    store.addLibrary(card, 'watching');
+    const initial = store.export();
+    store.restore(initial);
+    const external = join(directory(), 'external.json');
+    writeFileSync(external, JSON.stringify(initial));
+    const name = 'before-restore-2.json';
+    try {
+      symlinkSync(external, join(store.backups.directory!, name), 'file');
+    } catch (error) {
+      // Ordinary Windows accounts need Developer Mode or elevation for file symlinks.
+      // CI must exercise this case; do not hide missing CI privileges with a skip.
+      if (
+        process.platform === 'win32' &&
+        !process.env.CI &&
+        (error as NodeJS.ErrnoException).code === 'EPERM'
+      )
+        return skip('Windows file symlink privilege is unavailable');
+      throw error;
+    }
+    expect(() => store.backups.read(name)).toThrow();
+    expect(store.backups.list().items.some((item) => item.name === name)).toBe(false);
+    expect(store.library()[0].status).toBe('watching');
+    expect(JSON.parse(readFileSync(external, 'utf8'))).toEqual(initial);
+  });
   it('rejects a symlinked backup directory before writing or restoring', () => {
     const store = open();
     const external = directory();
-    symlinkSync(external, store.backups.directory!);
+    symlinkSync(external, store.backups.directory!, process.platform === 'win32' ? 'junction' : 'dir');
     store.addLibrary(card, 'watching');
     const backup = { ...store.export(), library: [] };
     expect(() => store.restore(backup)).toThrow('实际文件夹');

@@ -5,7 +5,7 @@
 <h1 align="center">Sardina anime</h1>
 
 <p align="center">在本机找番、追番，接着上次的进度看。</p>
-<p align="center">macOS Apple Silicon · 本地网页版 · v0.7.2 开发预览</p>
+<p align="center">Windows x64 · macOS Apple Silicon · 本地网页版 · v0.7.2 开发预览</p>
 
 <p align="center">
   <a href="#安装">下载</a> ·
@@ -35,7 +35,15 @@
 
 ## 安装
 
-**macOS 12 及以上 · Apple Silicon（M 系列）**，无需安装 Node.js 或 pnpm。
+安装包包含运行环境，无需安装 Node.js 或 pnpm。
+
+### Windows 10 / 11 · x64
+
+[下载 Windows 安装版](https://github.com/zzzfu411/Sardina-anime/releases/download/v0.7.2-windows.1/Sardina-anime-0.7.2-windows-x64-setup.exe) · [免安装 ZIP](https://github.com/zzzfu411/Sardina-anime/releases/download/v0.7.2-windows.1/Sardina-anime-0.7.2-windows-x64.zip) · [版本说明与校验值](https://github.com/zzzfu411/Sardina-anime/releases/tag/v0.7.2-windows.1)
+
+运行安装向导，或完整解压 ZIP 后运行 `Sardina anime.exe`。此开发预览未做 Authenticode 签名，Windows 可能提示未知发布者；请确认下载来源为本仓库。详见 [Windows 构建与安装](docs/WINDOWS-RELEASE.md)。
+
+### macOS 12 及以上 · Apple Silicon（M 系列）
 
 [下载 v0.7.2 DMG](https://github.com/zzzfu411/Sardina-anime/releases/download/v0.7.2/Sardina-anime-0.7.2-arm64.dmg) · [ZIP](https://github.com/zzzfu411/Sardina-anime/releases/download/v0.7.2/Sardina-anime-0.7.2-arm64.zip) · [版本说明与校验值](https://github.com/zzzfu411/Sardina-anime/releases/tag/v0.7.2)
 
@@ -58,9 +66,11 @@ pnpm start
 ```sh
 pnpm desktop       # 启动 Electron 开发窗口
 pnpm package:mac   # 在 Apple Silicon Mac 上生成 DMG / ZIP
+pnpm package:win   # 在 Windows x64 上生成安装程序 / ZIP
+pnpm verify:desktop # 使用隔离资料目录验证当前平台的打包应用
 ```
 
-资料默认保存在 `~/Library/Application Support/Revanime/`；保留旧目录名以兼容已有数据。可用 `REVANIME_DATA_DIR` 指定其他目录，迁移资料请使用设置中的导出与恢复。
+资料默认保存在 macOS 的 `~/Library/Application Support/Revanime/` 或 Windows 的 `%APPDATA%\Revanime\`；保留旧目录名以兼容已有数据。可用 `REVANIME_DATA_DIR` 指定其他目录，迁移资料请使用设置中的导出与恢复。
 
 ## 本地 API
 

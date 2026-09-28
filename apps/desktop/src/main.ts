@@ -2,6 +2,7 @@ import { app, BrowserWindow, dialog, Menu, powerMonitor, shell, utilityProcess }
 import { join } from 'node:path';
 
 app.setName('Sardina anime');
+if (process.platform === 'win32') app.setAppUserModelId('local.revanime.app');
 // Keep the existing Chromium profile and single-instance lock across the rename.
 if (!app.commandLine.hasSwitch('user-data-dir'))
   app.setPath('userData', join(app.getPath('appData'), 'Revanime'));
@@ -26,8 +27,9 @@ const showWindow = async () => {
     minHeight: 620,
     title: 'Sardina anime',
     backgroundColor: '#d8d3cc',
-    titleBarStyle: 'hiddenInset',
-    trafficLightPosition: { x: 22, y: 20 },
+    ...(process.platform === 'darwin'
+      ? { titleBarStyle: 'hiddenInset' as const, trafficLightPosition: { x: 22, y: 20 } }
+      : { titleBarStyle: 'default' as const, autoHideMenuBar: true }),
     webPreferences: { nodeIntegration: false, contextIsolation: true, sandbox: true, webSecurity: true },
   });
   window.webContents.setWindowOpenHandler(({ url }) => {

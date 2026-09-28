@@ -1,0 +1,22 @@
+{
+  "version": "0.7.2",
+  "releaseTag": "v0.7.2-windows.1",
+  "checkedAt": "2026-09-28T07:35:00.822Z",
+  "platform": "win32",
+  "arch": "x64",
+  "osRelease": "10.0.26200",
+  "node": "v24.11.1",
+  "localTests": {
+    "passed": 322,
+    "skipped": 1,
+    "reason": "File symlink privilege unavailable locally; CI requires this case to run."
+  },
+  "typecheck": true,
+  "installerExitCode": 0,
+  "uninstallerExitCode": 0,
+  "installedExecutableRemoved": true,
+  "installerSmoke": "desktop-0.7.2-windows-installed.json",
+  "zipSmoke": "desktop-0.7.2-windows-zip.json",
+  "mediaFixtures": "Original repository MP4/HLS samples, 480x270; not full episodes from upstream sites.",
+  "signing": "Unsigned development preview"
+}

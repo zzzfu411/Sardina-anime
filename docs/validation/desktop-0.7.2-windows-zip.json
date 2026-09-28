@@ -1,0 +1,74 @@
+{
+  "version": "0.7.2",
+  "checkedAt": "2026-09-28T07:33:15.789Z",
+  "platform": "win32",
+  "arch": "x64",
+  "systemNodeOnPath": false,
+  "testedApp": ".cache/windows-zip-validation/Sardina anime.exe",
+  "isolatedProfile": ".cache/desktop-validation-0.7.2-win32-vMLUb0",
+  "title": "Sardina anime",
+  "preferences": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false
+  },
+  "engine": {
+    "app": "revanime",
+    "version": "0.7.2",
+    "pid": 77708,
+    "releaseStatus": "development-preview"
+  },
+  "sources": [
+    {
+      "id": "girigiri",
+      "name": "girigiri"
+    },
+    {
+      "id": "anich",
+      "name": "AniCh"
+    },
+    {
+      "id": "aki",
+      "name": "AkiAnime"
+    },
+    {
+      "id": "erkuang",
+      "name": "二矿动漫"
+    },
+    {
+      "id": "gugu",
+      "name": "咕咕动漫"
+    },
+    {
+      "id": "ledou",
+      "name": "乐豆动漫"
+    },
+    {
+      "id": "xifan",
+      "name": "稀饭动漫"
+    }
+  ],
+  "preferredSource": "girigiri",
+  "repeatLaunchUsesSameEngine": true,
+  "browserModeAttaches": true,
+  "catalogNavigation": true,
+  "weekdayNavigation": true,
+  "searchLanding": true,
+  "lightAppearancePersists": true,
+  "searchShortcut": true,
+  "resumeEventReloads": true,
+  "media": {
+    "mp4": {
+      "width": 480,
+      "height": 270,
+      "time": 0.52157
+    },
+    "hls": {
+      "width": 480,
+      "height": 270,
+      "time": 0.564636
+    }
+  },
+  "ok": true,
+  "testedBuild": "Local Windows x64 build; CI rebuild has its own validation artifact."
+}

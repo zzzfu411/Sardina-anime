@@ -1,8 +1,15 @@
 import { cp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { basename, resolve } from 'node:path';
 import { spawn } from 'node:child_process';
 import { build, Platform, Arch } from 'electron-builder';
-import './build';
+import { createHash } from 'node:crypto';
+
+const windows = process.argv.includes('--win');
+const platform = windows ? 'win32' : 'darwin';
+const arch = windows ? 'x64' : 'arm64';
+if (process.platform !== platform || process.arch !== arch)
+  throw new Error(`Package on ${platform}/${arch}; current host is ${process.platform}/${process.arch}`);
+await import('./build');
 
 const root = resolve('.');
 const stage = resolve('.tooling/desktop-app');
@@ -50,16 +57,26 @@ await writeFile(
 await cp(root + '/apps/desktop/runtime-package-lock.json', stage + '/package-lock.json');
 await new Promise<void>((ok, fail) => {
   const child = spawn(
-    'npm',
-    ['ci', '--omit=dev', '--ignore-scripts', '--no-audit', '--no-fund', '--cache', root + '/.cache/npm'],
-    { cwd: stage, stdio: 'inherit' },
+    windows ? (process.env.ComSpec ?? 'cmd.exe') : 'npm',
+    windows
+      ? ['/d', '/s', '/c', 'npm ci --omit=dev --ignore-scripts --no-audit --no-fund']
+      : ['ci', '--omit=dev', '--ignore-scripts', '--no-audit', '--no-fund'],
+    {
+      cwd: stage,
+      stdio: 'inherit',
+      windowsHide: true,
+      env: { ...process.env, npm_config_cache: root + '/.cache/npm' },
+    },
   );
   child.on('error', fail);
   child.on('exit', (code) => (code === 0 ? ok() : fail(new Error(`dependency install failed: ${code}`))));
 });
-await build({
+const artifacts = await build({
   projectDir: stage,
-  targets: Platform.MAC.createTarget(['dmg', 'zip'], Arch.arm64),
+  targets: windows
+    ? Platform.WINDOWS.createTarget(['nsis', 'zip'], Arch.x64)
+    : Platform.MAC.createTarget(['dmg', 'zip'], Arch.arm64),
+  publish: 'never',
   config: {
     appId: 'local.revanime.app',
     productName: 'Sardina anime',
@@ -69,6 +86,19 @@ await build({
     files: ['engine/**', 'desktop/**', 'web/**', 'package.json', 'node_modules/**'],
     asar: true,
     npmRebuild: true,
+    win: {
+      icon: root + '/assets/icon.png',
+      artifactName: 'Sardina-anime-${version}-windows-${arch}.${ext}',
+    },
+    nsis: {
+      artifactName: 'Sardina-anime-${version}-windows-${arch}-setup.${ext}',
+      oneClick: false,
+      perMachine: false,
+      allowToChangeInstallationDirectory: true,
+      deleteAppDataOnUninstall: false,
+      runAfterFinish: false,
+      shortcutName: 'Sardina anime',
+    },
     mac: {
       icon: root + '/assets/icon.icns',
       category: 'public.app-category.entertainment',
@@ -81,3 +111,18 @@ await build({
     dmg: { title: 'Sardina anime', sign: false },
   },
 });
+
+if (windows) {
+  const lines = await Promise.all(
+    artifacts
+      .filter((file) => /\.(exe|zip)$/.test(file))
+      .sort()
+      .map(async (file) => {
+        const hash = createHash('sha256')
+          .update(await readFile(file))
+          .digest('hex');
+        return `${hash}  ${basename(file)}`;
+      }),
+  );
+  await writeFile(resolve('release/SHA256SUMS-windows.txt'), lines.join('\n') + '\n');
+}

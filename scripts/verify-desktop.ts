@@ -1,14 +1,32 @@
 import { _electron as electron } from '@playwright/test';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { spawn } from 'node:child_process';
 import assert from 'node:assert/strict';
 import { APP_VERSION } from '../packages/core/src/types';
 
+const windows = process.platform === 'win32';
 const executablePath = resolve(
-  process.env.REVANIME_TEST_APP ?? 'release/mac-arm64/Sardina anime.app/Contents/MacOS/Sardina anime',
+  process.env.REVANIME_TEST_APP ??
+    (windows
+      ? 'release/win-unpacked/Sardina anime.exe'
+      : 'release/mac-arm64/Sardina anime.app/Contents/MacOS/Sardina anime'),
 );
-const profile = resolve(`.cache/desktop-validation-${APP_VERSION}`);
+await mkdir('.cache', { recursive: true });
+const profile = await mkdtemp(resolve(`.cache/desktop-validation-${APP_VERSION}-${process.platform}-`));
+// On Windows, environment names are case-insensitive. Remove every PATH spelling.
+const desktopEnv = Object.fromEntries(
+  Object.entries(process.env).filter(
+    (entry): entry is [string, string] => entry[0].toLowerCase() !== 'path' && entry[1] !== undefined,
+  ),
+);
+desktopEnv.PATH = windows
+  ? resolve(process.env.SystemRoot ?? 'C:/Windows', 'System32')
+  : '/usr/bin:/bin:/usr/sbin:/sbin';
+desktopEnv.REVANIME_DATA_DIR = profile;
+const reportPath =
+  process.env.REVANIME_TEST_REPORT ??
+  `docs/validation/desktop-${APP_VERSION}-${process.platform}-${process.arch}.json`;
 const appArgs = [`--user-data-dir=${profile}/chromium`];
 await mkdir(profile, { recursive: true });
 await mkdir('output/playwright', { recursive: true });
@@ -18,12 +36,13 @@ const report: Record<string, unknown> = {
   platform: process.platform,
   arch: process.arch,
   systemNodeOnPath: false,
-  testedDiskImage: Boolean(process.env.REVANIME_TEST_APP),
+  testedApp: executablePath,
+  isolatedProfile: profile,
 };
 const app = await electron.launch({
   executablePath,
   args: appArgs,
-  env: { ...process.env, PATH: '/usr/bin:/bin:/usr/sbin:/sbin', REVANIME_DATA_DIR: profile },
+  env: desktopEnv,
   timeout: 45_000,
 });
 try {
@@ -66,8 +85,9 @@ try {
     );
   const stateBefore = JSON.parse(await readFile(profile + '/engine.json', 'utf8'));
   const child = spawn(executablePath, appArgs, {
-    env: { ...process.env, PATH: '/usr/bin:/bin', REVANIME_DATA_DIR: profile },
+    env: desktopEnv,
     stdio: 'ignore',
+    windowsHide: true,
   });
   await new Promise<void>((ok, fail) => {
     child.once('error', fail);
@@ -76,9 +96,10 @@ try {
   const stateAfter = JSON.parse(await readFile(profile + '/engine.json', 'utf8'));
   report.repeatLaunchUsesSameEngine =
     stateBefore.pid === stateAfter.pid && stateBefore.port === stateAfter.port;
-  const attach = spawn(resolve('.tooling/node/bin/node'), ['dist/engine/cli.js'], {
+  const attach = spawn(process.execPath, ['dist/engine/cli.js'], {
     env: { ...process.env, REVANIME_DATA_DIR: profile },
     stdio: 'ignore',
+    windowsHide: true,
   });
   report.browserModeAttaches = await new Promise<boolean>((ok, fail) => {
     attach.once('error', fail);
@@ -120,7 +141,7 @@ try {
   await page.waitForFunction(() => document.documentElement.dataset.theme === 'light');
   report.lightAppearancePersists = true;
   await page.screenshot({ path: `output/playwright/desktop-settings-light-${APP_VERSION}.png` });
-  await page.keyboard.press('Meta+k');
+  await page.keyboard.press(process.platform === 'darwin' ? 'Meta+k' : 'Control+k');
   assert.equal(
     await page
       .getByRole('textbox', { name: '搜索番剧' })
@@ -140,6 +161,63 @@ try {
   await resumed;
   await page.getByRole('heading', { name: '设置', exact: true }).waitFor();
   report.resumeEventReloads = true;
+  // Decode the repository's original fixtures in the packaged Electron runtime.
+  await page.route('**/__desktop_validation/*', async (route) => {
+    const name = new URL(route.request().url()).pathname.split('/').at(-1)!;
+    if (name === 'hls.js')
+      return route.fulfill({
+        path: resolve('node_modules/hls.js/dist/hls.min.js'),
+        contentType: 'application/javascript',
+      });
+    if (!/^(sample\.mp4|index\.m3u8|segment-\d\d\.ts)$/.test(name)) return route.abort();
+    await route.fulfill({
+      path: resolve('tests/fixtures/media', name),
+      contentType: name.endsWith('.mp4')
+        ? 'video/mp4'
+        : name.endsWith('.m3u8')
+          ? 'application/vnd.apple.mpegurl'
+          : 'video/mp2t',
+    });
+  });
+  await page.addScriptTag({ url: '/__desktop_validation/hls.js' });
+  // A string keeps nested browser functions free of tsx's Node-side helpers.
+  report.media = await page.evaluate(`(async () => {
+    async function decode(hls) {
+      const video = document.createElement('video');
+      video.muted = true;
+      document.body.append(video);
+      const player = hls ? new window.Hls() : undefined;
+      try {
+        if (player) {
+          player.loadSource('/__desktop_validation/index.m3u8');
+          player.attachMedia(video);
+        } else video.src = '/__desktop_validation/sample.mp4';
+        return await new Promise((ok, fail) => {
+          const timeout = setTimeout(() => { cleanup(); fail(new Error('Packaged video decode timed out')); }, 15000);
+          const check = setInterval(() => {
+            if (video.currentTime > 0.5 && video.videoWidth > 0) {
+              cleanup();
+              ok({ width: video.videoWidth, height: video.videoHeight, time: video.currentTime });
+            }
+          }, 100);
+          function cleanup() { clearTimeout(timeout); clearInterval(check); }
+          void video.play().catch((error) => { cleanup(); fail(error); });
+        });
+      } finally {
+        video.pause();
+        player?.destroy();
+        video.removeAttribute('src');
+        video.load();
+        video.remove();
+      }
+    }
+    return { mp4: await decode(false), hls: await decode(true) };
+  })()`);
+  const media = report.media as Record<string, { width: number; height: number; time: number }>;
+  for (const format of ['mp4', 'hls']) {
+    assert.ok(media?.[format]?.width > 0, `${format} must decode video frames`);
+    assert.ok(media?.[format]?.time > 0.5, `${format} must advance playback`);
+  }
   await page.screenshot({ path: `output/playwright/desktop-settings-${APP_VERSION}.png` });
   report.ok = true;
 } catch (error) {
@@ -148,6 +226,6 @@ try {
   throw error;
 } finally {
   await app.close();
-  await writeFile(`docs/validation/desktop-${APP_VERSION}.json`, JSON.stringify(report, null, 2) + '\n');
+  await writeFile(reportPath, JSON.stringify(report, null, 2) + '\n');
 }
 console.log(report);
